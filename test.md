@@ -3,5 +3,5 @@
 ## hei 
 
 - [ ] Gjør x 
-- [X] Gjør Y 
+- [X] Gjør å
 
