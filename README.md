@@ -10,7 +10,7 @@ EKsamensprosjektet skal startes på i løpet av mai.
 * [Spørreundersøkelse 1 (med endring)](https://docs.google.com/forms/d/1UR7eo3kX0v_yvSnWNsZMbWUsGRVToseopP5vBos-1L8/edit)
 ### Kommunikasjon 
 * Github Issues 
-*[Discord](https://discord.gg/FgPVHz)
+* [Discord](https://discord.gg/FgPVHz)
 * Facebook chat 
 
 
