@@ -16,4 +16,5 @@ EKsamensprosjektet skal startes på i løpet av mai.
 
 ### Annet nyttig
 * [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+* [Grafisk profil Høyskolen Kristiania](http://designmanual.kristiania.no/)
 
