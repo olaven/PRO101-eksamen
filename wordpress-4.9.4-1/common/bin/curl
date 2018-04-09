@@ -1,0 +1,8 @@
+#!/bin/sh
+LD_LIBRARY_PATH="/Applications/wordpress-4.9.4-1/common/lib:$LD_LIBRARY_PATH"
+DYLD_FALLBACK_LIBRARY_PATH="/Applications/wordpress-4.9.4-1/common/lib:$DYLD_FALLBACK_LIBRARY_PATH"
+CURL_CA_BUNDLE="/Applications/wordpress-4.9.4-1/common/openssl/certs/curl-ca-bundle.crt"
+export LD_LIBRARY_PATH
+export DYLD_FALLBACK_LIBRARY_PATH
+export CURL_CA_BUNDLE
+exec /Applications/wordpress-4.9.4-1/common/bin/curl.bin "$@"

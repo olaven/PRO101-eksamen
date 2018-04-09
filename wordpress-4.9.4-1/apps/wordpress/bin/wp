@@ -1,0 +1,6 @@
+#!/bin/bash
+. /Applications/wordpress-4.9.4-1/scripts/setenv.sh
+export WP_CLI_CONFIG_PATH="/Applications/wordpress-4.9.4-1/apps/wordpress/bin/wp-cli.yml"
+export WP_CLI_PHP_USED="/Applications/wordpress-4.9.4-1/php/bin/php"
+
+exec "/Applications/wordpress-4.9.4-1/php/bin/php" "/Applications/wordpress-4.9.4-1/apps/wordpress/bin/wp-cli.phar" "$@"

@@ -1,0 +1,39 @@
+* {margin:0px; padding:0px}
+
+img {border:0px}
+
+a:link {color:#000000;text-decoration: underline;}
+
+h3 {font-size: 18px;margin-bottom:16px}
+h1 {font-size: 22px;margin-bottom:16px;text-align:center}
+h2 {font-size: 18px;margin-bottom:16px;text-align:center}
+h4 {font-size: 16px}
+
+#header { height:96px;width:100%;background-image: url(img/header_bg.png);background-repeat: repeat-x }
+#menu { height:38px ;width:100%;background-image: url(img/menu_bg.png);background-repeat: repeat-x; padding-top:142px;}
+#lowerContainer { position:relative;width:100%;background-image: url(img/sub_header_bg.png);background-repeat: repeat-x;padding-top:42px; }
+
+
+.tableHeader{margin-left:auto; margin-right:auto;}
+.tableParagraph{width:700px; margin-left:auto; margin-right:auto;}
+.tableParagraph img {margin-right:12px;margin-bottom:12px}
+.container {width:100%; margin:2%;margin-left:auto; margin-right:auto;font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 14px;line-height:1.3em;text-align:left}
+
+#content a:link {color:#000000;text-decoration: underline;}
+#content a:hover {color: #324fa2 !important;}
+#content a:visited {color:#000000;text-decoration:underline;}
+
+.round_table_top_left {background: url(/img/round_table_top_left.png) right top;background-repeat: no-repeat;width:43px;height:40px;text-align:right;padding-left:0px}
+.round_table_top_middle {background: url(/img/round_table_middle_top.png) left top;background-repeat: repeat-x;width:4px;height:40px}
+.round_table_top_right {background: url(/img/round_table_top_right.png) left top;background-repeat: no-repeat;width:43px;height:40px}
+.round_table_middle_left {background: url(/img/round_table_middle_left.png) right top;background-repeat: repeat-y;width:40px;height:4px;text-align:right}
+.round_table_middle_right {background: url(/img/round_table_middle_right.png) left top;background-repeat: repeat-y;width:40px;height:4px}
+.round_table_bottom_left {background: url(/img/round_table_bottom_left.png) right top;background-repeat: no-repeat;width:43px;height:40px;text-align:right}
+.round_table_bottom_middle {background: url(/img/round_table_middle_bottom.png) left top;background-repeat: repeat-x;width:4px;height:40px}
+.round_table_bottom_right {background: url(/img/round_table_bottom_right.png) left top;background-repeat: no-repeat;width:43px;height:40px}
+
+.round_table_content {width:24em;font-size:9px;color:#8d8d8d;text-align:left;padding-top:7px;}
+.round_table_content a {font-size:15px;color:#8d8d8d;text-align:left;padding-top:7px;}
+.round_table_content table td {text-align:left; }
+.round_table_content table td img {padding-right:16px;}
+.round_table_content img {padding:0;margin:0}

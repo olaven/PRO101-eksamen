@@ -1,0 +1,5 @@
+#!/bin/sh
+
+. /Applications/wordpress-4.9.4-1/scripts/setenv.sh
+
+exec /Applications/wordpress-4.9.4-1/varnish/bin/.varnishstat.bin -n /Applications/wordpress-4.9.4-1/varnish/var/varnish "$@"

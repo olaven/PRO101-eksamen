@@ -1,0 +1,18 @@
+prefix=/bitnami/mampstack-osx-x64/output/varnish
+exec_prefix=${prefix}
+bindir=${exec_prefix}/bin
+sbindir=/bitnami/mampstack-osx-x64/output/varnish/bin
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+pkgincludedir=${includedir}/varnish
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+pkgdatadir=${datadir}/varnish
+vmoddir=${libdir}/varnish/vmods
+vmodtool=${pkgdatadir}/vmodtool.py
+
+Name: VarnishAPI
+Description: Varnish API
+Version: 4.1.0
+Cflags: -I${includedir}/varnish
+Libs: -L${libdir} -lvarnishapi

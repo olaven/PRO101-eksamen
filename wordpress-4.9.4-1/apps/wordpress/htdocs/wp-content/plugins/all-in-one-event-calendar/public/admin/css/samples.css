@@ -1,0 +1,85 @@
+.calendar-samples {
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 100%;
+}
+
+#calendar-sample-1 {
+    background-image: url(../img/sample1.jpg);
+    height: 799px;
+    width: 800px;
+}
+
+#ai1ec-import-fb1 {
+    background-image: url(../img/fb1.jpg);
+    height: 409px;
+    width: 684px;
+}
+#ai1ec-import-fb2 {
+    background-image: url(../img/fb2.jpg);
+    height: 561px;
+    width: 690px;
+}
+#ai1ec-import-fb3 {
+    background-image: url(../img/fb3.jpg);
+    height: 394px;
+    width: 826px;
+}
+#ai1ec-import-fb4 {
+    background-image: url(../img/fb4.jpg);
+    height: 614px;
+    width: 718px;
+}
+#ai1ec-import-howto {
+    background-image: url(../img/howto.jpg);
+    height: 496px;
+    width: 830px;
+}
+#ai1ec-tickets1 {
+    background-image: url(../img/tickets1.jpg);
+    height: 276px;
+    width: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#ai1ec-tickets2 {
+    background-image: url(../img/tickets2.jpg);
+    height: 298px;
+    width: 260px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#ai1ec-import-fb1,
+#ai1ec-import-fb2,
+#ai1ec-import-fb3,
+#ai1ec-import-fb4,
+#ai1ec-import-howto,
+#ai1ec-tickets1,
+#ai1ec-tickets2  {
+	margin-top:20px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+}
+#ai1ec-tickets1,
+#ai1ec-tickets2  {
+	margin-top: 4px;
+}
+.ai1ec-feeds-facebook,
+.ai1ec-feeds-howto {
+	padding: 20px;
+	padding-top: 10px;
+}
+.ai1ec-feeds-facebook ul,
+.ai1ec-feeds-howto ul{
+	list-style: disc;
+	padding-left: 0px;
+}
+.ai1ec-feeds-facebook ul > div,
+.ai1ec-feeds-howto ul > div{
+	margin-bottom: 10px;
+}
+.ai1ec-feeds-facebook li,
+.ai1ec-feeds-howto li{
+	margin-left: 30px;
+}

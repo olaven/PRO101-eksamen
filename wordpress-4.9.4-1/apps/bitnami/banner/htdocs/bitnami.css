@@ -1,0 +1,88 @@
+/* Plain CSS! */
+
+@import url('css/normalize.css');
+
+body {
+  text-align: center;
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #eee;
+  color: #555;
+}
+
+a, a:link, a:active, a:hover, a:visited {
+  text-decoration: none;
+  color: #2a5d84;
+  text-decoration: underline;
+}
+
+pre, code, dl.credentials dd {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.container {
+  width: 640px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+img.stretch {
+  width: 100%;
+  height: auto;
+}
+
+#header {
+  background: #fff;
+  padding: 2em 0;
+}
+
+#header h1 {
+  font-weight: normal;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+}
+
+#header h1 em {
+  font-style: normal;
+}
+
+#header h1 em,
+#primary h2 {
+  color: #111;
+}
+
+#primary h2 {
+  font-weight: normal;
+}
+
+.block {
+  padding: 0 1em;
+}
+
+.block > h2 {
+  margin-left: -1em;
+}
+
+dl.credentials {
+  border-left: 3px solid #ccc;
+}
+
+dl.credentials dt {
+  float: left;
+  width: 100px;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+dl.credentials dt:after {
+  content: ':';
+}
+
+dl.credentials dd {
+  margin-left: 120px;
+  display: block;
+}

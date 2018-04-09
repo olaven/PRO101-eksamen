@@ -1,0 +1,55 @@
+<div class="timely-tickets-row">
+	<form action="{{ tickets_checkout_url }}" method="GET" target="_blank">
+		<input type="hidden" name="event_id" value="{{ api_event_id }}">
+		<table class="ai1ec-table">
+		<tbody>
+		{% set first_ticket = true %}
+		{% set has_active_tickets = false %}
+		{% for ticket in tickets %}
+			{% if ticket.status != 'hidden' %}
+				<tr>
+					<td class="ai1ec-tickets-amount">
+						{% if ticket.availability == null %}
+							{% set has_active_tickets = true %}
+							<select class="select2 ai1ec-select2"
+									name="ticket_type_{{ ticket.ticket_type_id }}">
+							{% set value_to_select = 0 %}
+							{% if 0 < ticket.buy_min_limit %}
+								<option {% if 0 == value_to_select %}selected{% endif %}>0</option>
+							{% endif %}	
+							{% for i in ticket.buy_min_limit..ticket.buy_max_available %}
+								<option {% if i == value_to_select %}selected{% endif %}>{{ i }}</option>
+							{% endfor %}
+							</select>
+						{% else %}
+							<div class="ai1ec-tickets-availability">
+								{{ ticket.availability | raw }}
+							</div>
+						{% endif %}	
+					</td>
+					<td class="ai1ec-tickets-info {% if ticket.availability != null %}ai1ec-tickets-info-inactive{% endif %}">
+						<div class="ai1ec-tickets-title">
+							<b>{% if ticket.symbol is defined %}{{ticket.symbol}}{% else %}${% endif %}{{ ticket.ticket_price}} {{ ticket.currency}}</b>&nbsp;{{ ticket.ticket_name }}
+						</div>						
+						<div class="ai1ec-tickets-description">{{ ticket.description }}</div>
+					</td>								
+				</tr>
+			{% endif %}			
+		{% endfor %}
+		{% if has_active_tickets == true %}
+			<tr>
+				<td></td>
+				<td>
+					<a href="#" id="ai1ec_tickets_submit"
+					   target="_blank" class="ai1ec-btn ai1ec-btn-sm ai1ec-btn-primary">
+						<i class="ai1ec-fa ai1ec-fa-ticket"
+					       title="{{ buy_tickets_text | e('html_attr') }}"></i>
+						{{ buy_tickets_text }}
+					</a>
+				</td>
+			</tr>
+		{% endif %}
+		</tbody>
+		</table>
+	</form>
+</div>

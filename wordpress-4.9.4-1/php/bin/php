@@ -1,0 +1,6 @@
+#!/bin/sh
+PHPRC=/Applications/wordpress-4.9.4-1/php/etc
+export PHPRC
+
+. /Applications/wordpress-4.9.4-1/php/../scripts/setenv.sh
+exec /Applications/wordpress-4.9.4-1/php/bin/php.bin "$@"

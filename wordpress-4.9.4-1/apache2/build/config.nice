@@ -1,0 +1,35 @@
+#! /bin/sh
+#
+# Created by configure
+
+CC="gcc"; export CC
+CFLAGS="-I/Applications/wordpress-4.9.4-1/common/include -arch x86_64"; export CFLAGS
+CPPFLAGS="-I/Applications/wordpress-4.9.4-1/common/include"; export CPPFLAGS
+LDFLAGS="-L/Applications/wordpress-4.9.4-1/common/lib -liconv"; export LDFLAGS
+"./configure" \
+"--prefix=/Applications/wordpress-4.9.4-1/apache2" \
+"--enable-so" \
+"--enable-mods-shared=most" \
+"--disable-auth_dbm" \
+"--without-berkeley-db" \
+"--enable-deflate" \
+"--enable-ssl" \
+"--with-ssl=/Applications/wordpress-4.9.4-1/common" \
+"--enable-proxy" \
+"--enable-proxy-http" \
+"--enable-proxy-balancer" \
+"--enable-rewrite" \
+"--with-ldap" \
+"--enable-authnz-ldap" \
+"--enable-ldap" \
+"--with-apr=/Applications/wordpress-4.9.4-1/common/bin/apr-1-config" \
+"--with-apu=/Applications/wordpress-4.9.4-1/common/bin/apr-1-config" \
+"--with-pcre=/Applications/wordpress-4.9.4-1/common/bin/pcre-config" \
+"--enable-mpms-shared=all" \
+"--with-nghttp2=/Applications/wordpress-4.9.4-1/common/lib" \
+"--with-mpm=prefork" \
+"CC=gcc" \
+"CFLAGS=-I/Applications/wordpress-4.9.4-1/common/include -arch x86_64" \
+"LDFLAGS=-L/Applications/wordpress-4.9.4-1/common/lib -liconv" \
+"CPPFLAGS=-I/Applications/wordpress-4.9.4-1/common/include" \
+"$@"

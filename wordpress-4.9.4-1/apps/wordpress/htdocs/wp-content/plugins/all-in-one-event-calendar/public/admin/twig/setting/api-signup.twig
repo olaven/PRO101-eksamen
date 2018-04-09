@@ -1,0 +1,162 @@
+{% if api_signed %}
+<div class="ai1ec-well" id="ai1ec-api-signed-in">
+	<i class="ai1ec-fa ai1ec-fa-check ai1ec-fa-fw"></i>
+	{{ signed_in_text | raw }}
+	{% if can_sign_out %}
+		<a href="#" id="ai1ec-api-signout" class="ai1ec-pull-right"
+		   data-action="{{ api_action }}">{{ sign_out_text }}</a>
+	{% endif %}
+	{{ wp_nonce_field( nonce.action, nonce.name, nonce.referrer ) }}
+	<div id="ai1ec-api-signout-confirm">
+		{{ sign_out_warning | raw }}
+		<div class="ai1ec-api-signout-buttons">
+			<a href="#" class="ai1ec-btn ai1ec-btn-cancel ai1ec-btn-warning"
+			   id="ai1ec-api-signout-cancel">
+					{{ sign_out_cancel }}
+			</a>
+			<a href="#" class="ai1ec-btn ai1ec-btn-danger"
+			   id="ai1ec-api-signout-button">
+					{{ sign_out_confirm }}
+			  </a>
+		</div>
+	</div>
+</div>
+{% elseif signup_available %}
+<div class="timely-api ai1ec-well">
+	{% if title is not empty %}
+		<span>{{ title | raw }}</span>
+	{% endif %}
+	<a href="#" class="ai1ec-pull-right ai1ec-api-signup-hide ai1ec-hidden">{{ hide_form_text }}</a>
+	<a href="#" class="ai1ec-pull-right ai1ec-signup-show">{{ show_form_text }}</a>
+	<div id="ai1ec-api-signup-form" class="ai1ec-hidden" data-action="{{ api_action }}">
+		<!-- Trick to disable autocomplete -->
+		<input type="hidden" name="ai1ec_email" class="ai1ec-noauto" />
+		<input type="hidden" name="ai1ec_password" class="ai1ec-noauto" />
+		<!-- -->
+		{{ wp_nonce_field( nonce.action, nonce.name, nonce.referrer ) }}
+		<div class="metabox-holder">
+			<div class="post-box-container left-side">
+				<table class="ai1ec-ticketing-signup">
+					<tr>
+						<td class="ai1ec_label_field">
+						</td>
+						<td class="ai1ec_input_field" style="padding-bottom:15px;">
+							<label style="margin-right:10px">
+								<input type="radio" name="ai1ec_signing"
+									   value="1" checked="checked" />
+								{{ register_text }}
+							</label>
+							<label>
+								<input type="radio" name="ai1ec_signing" value="2"/>
+								{{ sign_in_text }}
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							{{ full_name_text }}
+						</td>
+						<td>
+							<div class="ai1ec-ticket-field-error">
+								{{ required_text }}
+							</div>
+							<input type="text" name="ai1ec_name" class="ai1ec-required" />
+						</td>
+					</tr>
+					<tr class="signin">
+						<td>
+							{{ email_text }}
+						</td>
+						<td>
+							<div class="ai1ec-ticket-field-error">
+								{{ required_text }}
+							</div>
+							<input type="text" name="ai1ec_email" class="ai1ec-required" />
+						</td>
+					</tr>
+					<tr class="signin">
+						<td>
+							{{ password_text }}
+						</td>
+						<td>
+							<div class="ai1ec-ticket-field-error">
+								{{ required_text }}
+							</div>
+							<input type="password" name="ai1ec_password" class="ai1ec-required" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							{{ confirm_password_text }}
+						</td>
+						<td>
+							<div class="ai1ec-ticket-field-error">
+								{{ required_text }}
+							</div>
+							<input type="password" name="ai1ec_password_confirmation"
+								   class="ai1ec-required" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							{{ phone_number_text }}
+						</td>
+						<td>
+							<div class="ai1ec-ticket-field-error">
+								{{ required_text }}
+							</div>
+							<input type="text" name="ai1ec_phone" class="ai1ec-required" />
+						</td>
+					</tr>
+					<tr class="signin">
+						<td>
+							{{ calendar_type_text }}
+						</td>
+						<td>
+							<div class="ai1ec-ticket-field-error">
+								{{ required_text }}
+							</div>
+							<select name="ai1ec_calendar_type" class="ai1ec-required">
+								<option value=""></option>
+								{% for calendar_type_key, calendar_type_option in calendar_types %}
+									<option value="{{ calendar_type_key }}">
+										{{ calendar_type_option }}
+									</option>
+								{% endfor %}
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>
+							<div class="ai1ec-ticket-field-error">
+								{{ required_text }}
+							</div>
+							<label for="ai1ec_terms">
+								<input type="checkbox" id="ai1ec_terms"
+									   name="ai1ec_terms" class="ai1ec-required" />
+								{{ terms_text | raw }}
+							</label>
+							<a href="#" name="ai1ec_tickets_signin"  style="margin-top:20px;"
+							   class="ai1ec-btn ai1ec-btn-lg ai1ec-btn-primary">
+								{{ sign_up_button_text }}
+							</a>
+						</td>
+					</tr>
+					<tr class="signin ai1ec-hidden">
+						<td>
+						</td>
+						<td>
+							<a href="#" name="ai1ec_tickets_signin"  style="margin-top:20px;"
+							   class="ai1ec-btn ai1ec-btn-lg ai1ec-btn-primary">
+								{{ sign_in_button_text }}
+							</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}
