@@ -3,6 +3,8 @@
 EKsamensprosjektet skal startes på i løpet av mai.
 
 ## Nødvendige linker 
+* [Wordpress-themes Getting Started](https://developer.wordpress.org/themes/getting-started/who-should-read-this-handbook/)
+* 
 ### Møter og agendaer 
 * [Møtedokumentasjon](https://docs.google.com/document/d/1FUXLOJg794F6NIIu2mLVjFSWY7_rolldiPLHSG068us/edit)
 ### Undersøkelser
