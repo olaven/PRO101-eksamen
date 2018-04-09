@@ -14,7 +14,7 @@ EKsamensprosjektet skal startes på i løpet av mai.
        5. **linje 32**: `define('DB_HOST', 'localhost:3306');`
        6.**linje 49-56**: _Authentication Unique Keys and Salts_ hentes herfra https://api.wordpress.org/secret-key/1.1/salt/  
        8.**linje 90-end**:
-            ```PHP
+            ``` PHP
 
             if ( defined( 'WP_CLI' ) ) {
                 $_SERVER['HTTP_HOST'] = 'localhost';
