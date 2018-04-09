@@ -29,9 +29,7 @@ Er bidraget deres meget bra, spør de om de kjenner til andre elever som også k
 
 
 
-Planlegging: 
-# Brukertest 
-
+## Planlegging av Brukertest:
 ## Tanker og metode 
 * Kvalitativt  
 * Fordele oss på de tre største campusene 
