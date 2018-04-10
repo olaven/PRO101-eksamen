@@ -1,0 +1,1 @@
+<?php bloginfo('header-oppdateringer') ?>
