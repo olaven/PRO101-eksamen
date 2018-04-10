@@ -8,10 +8,10 @@
     <body>
         <?php get_header(); ?>
         <main>
-            <?php
-                //posts -> oppdateringer fra skolen
-                get_template_part('template-parts/post-viewer'); 
-            ?>
+            <?php get_template_part('template-parts/widget-area');?>
+            <!-- posts -> oppdateringer fra skolen --> 
+            <?php get_template_part('template-parts/post-viewer');?>
+            <?php get_template_part('template-parts/footer');?>
         </main>
     </body>
 </html>

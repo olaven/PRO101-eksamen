@@ -1,0 +1,1061 @@
+# Copyright (C) 2016 Google Maps Widget
+# This file is distributed under the same license as the Google Maps Widget package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Google Maps Widget 3.04\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/google-maps-"
+"widget\n"
+"POT-Creation-Date: 2016-02-17 16:09:47+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: gmw-export-import.php:128
+msgid "Sidebar does not exist in theme (using Inactive)"
+msgstr ""
+
+#: gmw-export-import.php:157
+msgid "Widget already exists"
+msgstr ""
+
+#: gmw-export-import.php:208
+msgid "No Title"
+msgstr ""
+
+#: gmw-tracking.php:81
+msgid ""
+"Please help us improve <strong>Google Maps Widget</strong> by allowing "
+"tracking of anonymous usage data. Absolutely <strong>no sensitive data is "
+"tracked</strong> (<a href=\"http://www.googlemapswidget.com/plugin-tracking-"
+"info/\" target=\"_blank\">complete disclosure &amp; details of our tracking "
+"policy</a>)."
+msgstr ""
+
+#: gmw-tracking.php:82
+msgid "Allow"
+msgstr ""
+
+#: gmw-tracking.php:83
+msgid "Do not allow tracking"
+msgstr ""
+
+#. #-#-#-#-#  plugin.pot (Google Maps Widget 3.04)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: gmw-widget.php:57 google-maps-widget.php:488 google-maps-widget.php:710
+#: google-maps-widget.php:921
+msgid "Google Maps Widget"
+msgstr ""
+
+#: gmw-widget.php:62
+msgid ""
+"Displays a map image thumbnail with a larger map available in a lightbox."
+msgstr ""
+
+#: gmw-widget.php:66
+msgid "Map"
+msgstr ""
+
+#: gmw-widget.php:67
+msgid "New York, USA"
+msgstr ""
+
+#: gmw-widget.php:81 gmw-widget.php:86
+msgid "Road (default)"
+msgstr ""
+
+#: gmw-widget.php:82 gmw-widget.php:87
+msgid "Satellite"
+msgstr ""
+
+#: gmw-widget.php:83
+msgid "Terrain"
+msgstr ""
+
+#: gmw-widget.php:84
+msgid "Hybrid"
+msgstr ""
+
+#: gmw-widget.php:89
+msgid "Place (default)"
+msgstr ""
+
+#: gmw-widget.php:91
+msgid "Tiny"
+msgstr ""
+
+#: gmw-widget.php:92
+msgid "Small"
+msgstr ""
+
+#: gmw-widget.php:93
+msgid "Medium"
+msgstr ""
+
+#: gmw-widget.php:94
+msgid "Large (default)"
+msgstr ""
+
+#: gmw-widget.php:96
+msgid "Black"
+msgstr ""
+
+#: gmw-widget.php:97
+msgid "Brown"
+msgstr ""
+
+#: gmw-widget.php:98
+msgid "Green"
+msgstr ""
+
+#: gmw-widget.php:99
+msgid "Purple"
+msgstr ""
+
+#: gmw-widget.php:100
+msgid "Yellow"
+msgstr ""
+
+#: gmw-widget.php:101 gmw-widget.php:149 gmw-widget.php:235
+msgid "Blue"
+msgstr ""
+
+#: gmw-widget.php:102 gmw-widget.php:152
+msgid "Gray"
+msgstr ""
+
+#: gmw-widget.php:103
+msgid "Orange"
+msgstr ""
+
+#: gmw-widget.php:104
+msgid "Red (default)"
+msgstr ""
+
+#: gmw-widget.php:105
+msgid "White"
+msgstr ""
+
+#: gmw-widget.php:107
+msgid "A (default)"
+msgstr ""
+
+#: gmw-widget.php:109
+msgid "0 - entire world"
+msgstr ""
+
+#: gmw-widget.php:119
+msgid "Custom size (default)"
+msgstr ""
+
+#: gmw-widget.php:121
+msgid "Light (default)"
+msgstr ""
+
+#: gmw-widget.php:122
+msgid "Dark"
+msgstr ""
+
+#: gmw-widget.php:124
+msgid "Predefined by Google (default)"
+msgstr ""
+
+#: gmw-widget.php:125
+msgid "Custom image"
+msgstr ""
+
+#: gmw-widget.php:127 gmw-widget.php:167 gmw-widget.php:276
+msgid "Interactive map in lightbox (default)"
+msgstr ""
+
+#: gmw-widget.php:128 gmw-widget.php:170 gmw-widget.php:279 gmw-widget.php:394
+msgid "Custom URL"
+msgstr ""
+
+#: gmw-widget.php:129 gmw-widget.php:172 gmw-widget.php:281
+msgid "Disable link"
+msgstr ""
+
+#: gmw-widget.php:131
+msgid "Default"
+msgstr ""
+
+#: gmw-widget.php:132
+msgid "Refreshed by Google"
+msgstr ""
+
+#: gmw-widget.php:134
+msgid "PNG 8-bit (default)"
+msgstr ""
+
+#: gmw-widget.php:140
+msgid "Show map title"
+msgstr ""
+
+#: gmw-widget.php:141
+msgid "Close on overlay click"
+msgstr ""
+
+#: gmw-widget.php:143
+msgid "Detect automatically"
+msgstr ""
+
+#: gmw-widget.php:144
+msgid "Metric"
+msgstr ""
+
+#: gmw-widget.php:145
+msgid "Imperial"
+msgstr ""
+
+#: gmw-widget.php:148
+msgid "Apple"
+msgstr ""
+
+#: gmw-widget.php:150
+msgid "Bright"
+msgstr ""
+
+#: gmw-widget.php:151
+msgid "Gowalla"
+msgstr ""
+
+#: gmw-widget.php:153
+msgid "Gray #2"
+msgstr ""
+
+#: gmw-widget.php:154
+msgid "Light"
+msgstr ""
+
+#: gmw-widget.php:155
+msgid "Mapbox"
+msgstr ""
+
+#: gmw-widget.php:156
+msgid "Midnight"
+msgstr ""
+
+#: gmw-widget.php:157
+msgid "Pale"
+msgstr ""
+
+#: gmw-widget.php:158
+msgid "Paper"
+msgstr ""
+
+#: gmw-widget.php:160
+msgid "GMW pins library"
+msgstr ""
+
+#: gmw-widget.php:162
+msgid "PNG 32-bit"
+msgstr ""
+
+#: gmw-widget.php:163
+msgid "GIF"
+msgstr ""
+
+#: gmw-widget.php:164
+msgid "JPEG"
+msgstr ""
+
+#: gmw-widget.php:165
+msgid "Non-progressive JPEG"
+msgstr ""
+
+#: gmw-widget.php:168 gmw-widget.php:277
+msgid "Replace thumb map with an interactive map"
+msgstr ""
+
+#: gmw-widget.php:169 gmw-widget.php:278
+msgid "Interactive map in a new window"
+msgstr ""
+
+#: gmw-widget.php:171 gmw-widget.php:280
+msgid "Custom URL in a new window"
+msgstr ""
+
+#: gmw-widget.php:174
+msgid "Automatic (based on user's browser settings)"
+msgstr ""
+
+#: gmw-widget.php:175
+msgid "Arabic"
+msgstr ""
+
+#: gmw-widget.php:176
+msgid "Basque"
+msgstr ""
+
+#: gmw-widget.php:177
+msgid "Bengali"
+msgstr ""
+
+#: gmw-widget.php:178
+msgid "Bulgarian"
+msgstr ""
+
+#: gmw-widget.php:179
+msgid "Catalan"
+msgstr ""
+
+#: gmw-widget.php:180
+msgid "Chinese (Simplified)"
+msgstr ""
+
+#: gmw-widget.php:181
+msgid "Chinese (Traditional)"
+msgstr ""
+
+#: gmw-widget.php:182
+msgid "Croatian"
+msgstr ""
+
+#: gmw-widget.php:183
+msgid "Czech"
+msgstr ""
+
+#: gmw-widget.php:184
+msgid "Danish"
+msgstr ""
+
+#: gmw-widget.php:185
+msgid "Dutch"
+msgstr ""
+
+#: gmw-widget.php:186
+msgid "English (Australian)"
+msgstr ""
+
+#: gmw-widget.php:187
+msgid "English (Great Britain)"
+msgstr ""
+
+#: gmw-widget.php:188
+msgid "Farsi"
+msgstr ""
+
+#: gmw-widget.php:189
+msgid "Filipino"
+msgstr ""
+
+#: gmw-widget.php:190
+msgid "Finnish"
+msgstr ""
+
+#: gmw-widget.php:191
+msgid "French"
+msgstr ""
+
+#: gmw-widget.php:192
+msgid "Galician"
+msgstr ""
+
+#: gmw-widget.php:193
+msgid "German"
+msgstr ""
+
+#: gmw-widget.php:194
+msgid "Greek"
+msgstr ""
+
+#: gmw-widget.php:195
+msgid "Gujarati"
+msgstr ""
+
+#: gmw-widget.php:196
+msgid "Hebrew"
+msgstr ""
+
+#: gmw-widget.php:197
+msgid "Hindi"
+msgstr ""
+
+#: gmw-widget.php:198
+msgid "Hungarian"
+msgstr ""
+
+#: gmw-widget.php:199
+msgid "Indonesian"
+msgstr ""
+
+#: gmw-widget.php:200
+msgid "Italian"
+msgstr ""
+
+#: gmw-widget.php:201
+msgid "Japanese"
+msgstr ""
+
+#: gmw-widget.php:202
+msgid "Kannada"
+msgstr ""
+
+#: gmw-widget.php:203
+msgid "Korean"
+msgstr ""
+
+#: gmw-widget.php:204
+msgid "Latvian"
+msgstr ""
+
+#: gmw-widget.php:205
+msgid "Lithuanian"
+msgstr ""
+
+#: gmw-widget.php:206
+msgid "Malayalam"
+msgstr ""
+
+#: gmw-widget.php:207
+msgid "Marathi"
+msgstr ""
+
+#: gmw-widget.php:208
+msgid "Norwegian"
+msgstr ""
+
+#: gmw-widget.php:209
+msgid "Polish"
+msgstr ""
+
+#: gmw-widget.php:210
+msgid "Portuguese"
+msgstr ""
+
+#: gmw-widget.php:211
+msgid "Portuguese (Brazil)"
+msgstr ""
+
+#: gmw-widget.php:212
+msgid "Portuguese (Portugal)"
+msgstr ""
+
+#: gmw-widget.php:213
+msgid "Romanian"
+msgstr ""
+
+#: gmw-widget.php:214
+msgid "Russian"
+msgstr ""
+
+#: gmw-widget.php:215
+msgid "Serbian"
+msgstr ""
+
+#: gmw-widget.php:216
+msgid "Slovak"
+msgstr ""
+
+#: gmw-widget.php:217
+msgid "Slovenian"
+msgstr ""
+
+#: gmw-widget.php:218
+msgid "Spanish"
+msgstr ""
+
+#: gmw-widget.php:219
+msgid "Swedish"
+msgstr ""
+
+#: gmw-widget.php:220
+msgid "Tagalog"
+msgstr ""
+
+#: gmw-widget.php:221
+msgid "Tamil"
+msgstr ""
+
+#: gmw-widget.php:222
+msgid "Telugu"
+msgstr ""
+
+#: gmw-widget.php:223
+msgid "Thai"
+msgstr ""
+
+#: gmw-widget.php:224
+msgid "Turkish"
+msgstr ""
+
+#: gmw-widget.php:225
+msgid "Ukrainian"
+msgstr ""
+
+#: gmw-widget.php:226
+msgid "Vietnamese"
+msgstr ""
+
+#: gmw-widget.php:229
+msgid "Dark rim"
+msgstr ""
+
+#: gmw-widget.php:230
+msgid "Fancy"
+msgstr ""
+
+#: gmw-widget.php:231
+msgid "Gray squared"
+msgstr ""
+
+#: gmw-widget.php:232
+msgid "Minimalistic"
+msgstr ""
+
+#: gmw-widget.php:233
+msgid "Minimalistic #2"
+msgstr ""
+
+#: gmw-widget.php:234
+msgid "Simple"
+msgstr ""
+
+#: gmw-widget.php:236
+msgid "Polaroid"
+msgstr ""
+
+#: gmw-widget.php:237
+msgid "Rounded"
+msgstr ""
+
+#: gmw-widget.php:238
+msgid "Tablet"
+msgstr ""
+
+#: gmw-widget.php:239
+msgid "Gears"
+msgstr ""
+
+#: gmw-widget.php:240
+msgid "Painting"
+msgstr ""
+
+#: gmw-widget.php:241
+msgid "Rounded white"
+msgstr ""
+
+#: gmw-widget.php:242
+msgid "Shadow"
+msgstr ""
+
+#: gmw-widget.php:243
+msgid "Cartoonish"
+msgstr ""
+
+#: gmw-widget.php:244
+msgid "Squared black"
+msgstr ""
+
+#: gmw-widget.php:245
+msgid "Squared white"
+msgstr ""
+
+#: gmw-widget.php:246
+msgid "Vintage"
+msgstr ""
+
+#: gmw-widget.php:247
+msgid "Wood"
+msgstr ""
+
+#: gmw-widget.php:249 gmw-widget.php:285
+msgid "Directions"
+msgstr ""
+
+#: gmw-widget.php:250 gmw-widget.php:286
+msgid "Search"
+msgstr ""
+
+#: gmw-widget.php:251 gmw-widget.php:287
+msgid "View (clean map, no markers)"
+msgstr ""
+
+#: gmw-widget.php:252 gmw-widget.php:288
+msgid "Street View"
+msgstr ""
+
+#: gmw-widget.php:254
+msgid "Dot"
+msgstr ""
+
+#: gmw-widget.php:262 gmw-widget.php:292
+msgid "Fullscreen"
+msgstr ""
+
+#: gmw-widget.php:264 gmw-widget.php:295
+msgid "Close on Esc key"
+msgstr ""
+
+#: gmw-widget.php:265 gmw-widget.php:294
+msgid "Show close button"
+msgstr ""
+
+#: gmw-widget.php:267
+msgid "Add 11 additional color schemes"
+msgstr ""
+
+#: gmw-widget.php:269
+msgid "GMW pins library (700+ pins)"
+msgstr ""
+
+#: gmw-widget.php:271
+msgid "Add 4 more image formats"
+msgstr ""
+
+#: gmw-widget.php:273
+msgid "Add auto-detection and 50 more languages"
+msgstr ""
+
+#: gmw-widget.php:283
+msgid "Add 17 more skins"
+msgstr ""
+
+#: gmw-widget.php:290
+msgid "Choose a custom label by going PRO"
+msgstr ""
+
+#: gmw-widget.php:297
+msgid "PRO offers unlimited color choices"
+msgstr ""
+
+#: gmw-widget.php:308
+msgid "Title"
+msgstr ""
+
+#: gmw-widget.php:309
+msgid "Map title"
+msgstr ""
+
+#: gmw-widget.php:311
+msgid "Address"
+msgstr ""
+
+#: gmw-widget.php:313
+msgid "Address / location to show"
+msgstr ""
+
+#: gmw-widget.php:324
+msgid "Thumbnail Map"
+msgstr ""
+
+#: gmw-widget.php:325
+msgid "Interactive Map"
+msgstr ""
+
+#: gmw-widget.php:326
+msgid "Shortcode"
+msgstr ""
+
+#: gmw-widget.php:327
+msgid "Info &amp; Support"
+msgstr ""
+
+#: gmw-widget.php:332
+msgid "Map Size"
+msgstr ""
+
+#: gmw-widget.php:337 gmw-widget.php:460
+msgid "Map Type"
+msgstr ""
+
+#: gmw-widget.php:342
+msgid "Color Scheme"
+msgstr ""
+
+#: gmw-widget.php:347 gmw-widget.php:465
+msgid "Zoom Level"
+msgstr ""
+
+#: gmw-widget.php:352
+msgid "Pin Type"
+msgstr ""
+
+#: gmw-widget.php:359
+msgid "Pin Image"
+msgstr ""
+
+#: gmw-widget.php:365 gmw-widget.php:368
+msgid "Pin Color"
+msgstr ""
+
+#: gmw-widget.php:375
+msgid "Pin Size"
+msgstr ""
+
+#: gmw-widget.php:380
+msgid "Pin Label"
+msgstr ""
+
+#: gmw-widget.php:385
+msgid "Pin Image URL"
+msgstr ""
+
+#: gmw-widget.php:389
+msgid "Link To"
+msgstr ""
+
+#: gmw-widget.php:398
+msgid "Image Format"
+msgstr ""
+
+#: gmw-widget.php:403 gmw-widget.php:481
+msgid "Map Language"
+msgstr ""
+
+#: gmw-widget.php:408
+msgid "Text Above Map"
+msgstr ""
+
+#: gmw-widget.php:412
+msgid "Text Below Map"
+msgstr ""
+
+#: gmw-widget.php:421
+msgid "Lightbox Size"
+msgstr ""
+
+#: gmw-widget.php:429
+msgid "Map Mode"
+msgstr ""
+
+#: gmw-widget.php:438
+msgid "Search Query"
+msgstr ""
+
+#: gmw-widget.php:439
+msgid "Pizza"
+msgstr ""
+
+#: gmw-widget.php:443
+msgid "Start Address"
+msgstr ""
+
+#: gmw-widget.php:450
+msgid "Distance Units"
+msgstr ""
+
+#: gmw-widget.php:455
+msgid "Streetview"
+msgstr ""
+
+#: gmw-widget.php:470
+msgid "Lightbox Skin"
+msgstr ""
+
+#: gmw-widget.php:475
+msgid "Lightbox Features"
+msgstr ""
+
+#: gmw-widget.php:477
+msgid "Click to choose features"
+msgstr ""
+
+#: gmw-widget.php:486
+msgid "Header Text"
+msgstr ""
+
+#: gmw-widget.php:490
+msgid "Footer Text"
+msgstr ""
+
+#: gmw-widget.php:503
+msgid "Please save the widget so that the shortcode can be generated."
+msgstr ""
+
+#: gmw-widget.php:506
+msgid ""
+"Use the above shortcode to display this Google Maps Widget instance in any "
+"page or post. <br>Please note that your theme might style the widget in the "
+"post as if it is placed in a sidebar. In that case use the <code>div.gmw-"
+"shortcode-widget</code> class to target the shortcode and make  necessary "
+"changes via CSS."
+msgstr ""
+
+#: gmw-widget.php:517 gmw-widget.php:525 google-maps-widget.php:279
+#: google-maps-widget.php:281
+msgid "Support"
+msgstr ""
+
+#: gmw-widget.php:521 google-maps-widget.php:930
+msgid "License"
+msgstr ""
+
+#: gmw-widget.php:529
+msgid "Activate <span class=\"gmw-pro-red\">PRO</span> features"
+msgstr ""
+
+#: gmw-widget.php:534
+msgid "Rate the plugin &amp; spread the word"
+msgstr ""
+
+#: gmw-widget.php:541
+msgid ""
+"Upgrade to Google Maps Widget <span class=\"gmw-pro-red\">PRO</span> to get "
+"more than 50 extra options available immeditely. <a class=\"open_promo_dialog"
+"\" href=\"#\">Upgrade now</a>."
+msgstr ""
+
+#: gmw-widget.php:543
+msgid ""
+"Additional options are available in <a href=\"%s\" title=\"Settings"
+"\">settings</a>. "
+msgstr ""
+
+#: gmw-widget.php:543
+msgid ""
+"If you experience any problems or need help, please contact <a href=\"mailto:"
+"gmw@webfactoryltd.com?subject=GMW%20support\">support</a>."
+msgstr ""
+
+#: gmw-widget.php:656 gmw-widget.php:657
+msgid "Click to open a larger map"
+msgstr ""
+
+#: gmw-widget.php:660
+msgid "Click to open the interactive map"
+msgstr ""
+
+#: gmw-widget.php:661
+msgid "Click to open an interactive map"
+msgstr ""
+
+#: gmw-widget.php:669
+msgid "Click to open the interactive map in a new window"
+msgstr ""
+
+#: google-maps-widget.php:118
+msgid "Google Maps Widget PRO hidden sidebar"
+msgstr ""
+
+#: google-maps-widget.php:120
+msgid ""
+"Widgets in this area will never be shown anywhere in the theme. Area only "
+"helps you to build maps that are displayed with shortcodes."
+msgstr ""
+
+#: google-maps-widget.php:156
+msgid "License key saved and activated!"
+msgstr ""
+
+#: google-maps-widget.php:192
+msgid ""
+"Google Maps API key is not valid. Access <a href=\"https://console."
+"developers.google.com/project\">Google Developers Console</a> to generate a "
+"key for free."
+msgstr ""
+
+#: google-maps-widget.php:197
+msgid ""
+"Map Shortcode is not valid. Please enter a valid shortcode name, eg: <i>gmw</"
+"i>."
+msgstr ""
+
+#: google-maps-widget.php:265
+msgid "Settings for Google Maps Widget"
+msgstr ""
+
+#: google-maps-widget.php:265 google-maps-widget.php:928
+msgid "Settings"
+msgstr ""
+
+#: google-maps-widget.php:266
+msgid "Configure Google Maps Widget for your theme"
+msgstr ""
+
+#: google-maps-widget.php:266
+msgid "Widgets"
+msgstr ""
+
+#: google-maps-widget.php:277
+msgid "View Google Maps Widget documentation"
+msgstr ""
+
+#: google-maps-widget.php:277
+msgid "Documentation"
+msgstr ""
+
+#: google-maps-widget.php:279 google-maps-widget.php:281
+msgid "Problems? We are here to help!"
+msgstr ""
+
+#: google-maps-widget.php:283
+msgid "If you like it, please review the plugin"
+msgstr ""
+
+#: google-maps-widget.php:283
+msgid "Review the plugin"
+msgstr ""
+
+#: google-maps-widget.php:284 google-maps-widget.php:629
+msgid "Activate PRO features"
+msgstr ""
+
+#: google-maps-widget.php:312
+msgid ""
+"Google Maps Widget <b>requires WordPress version 3.8</b> or higher to "
+"function properly. You are using WordPress version %s. Please <a href=\"%s"
+"\">update it</a>."
+msgstr ""
+
+#: google-maps-widget.php:518
+msgid "Google Maps Widget shortcode is not active!"
+msgstr ""
+
+#: google-maps-widget.php:518
+msgid ""
+" Shortcode <i>[%s]</i> is already in use by another plugin or theme. Please "
+"deactivate that theme or plugin, or <a href=\"%s\">change</a> the GMW "
+"shortcode."
+msgstr ""
+
+#: google-maps-widget.php:616
+msgid "Pay what you think is fair"
+msgstr ""
+
+#: google-maps-widget.php:617
+msgid "I will pay the full price later"
+msgstr ""
+
+#: google-maps-widget.php:627
+msgid ""
+"<b>Google Maps Widget</b> has more than 50 <b style=\"color: #d54e21;\">PRO</"
+"b> features. Check them out and grab the limited time offer! Act now!"
+msgstr ""
+
+#: google-maps-widget.php:630
+msgid "I will pay more later"
+msgstr ""
+
+#: google-maps-widget.php:640
+msgid ""
+"Hi! We saw you've been using <b>Google Maps Widget</b> for a few days and "
+"wanted to ask for your help to make the plugin even better.<br>We just need "
+"a minute of your time to rate the plugin. Thank you!"
+msgstr ""
+
+#: google-maps-widget.php:642
+msgid "Help us out &amp; rate the plugin"
+msgstr ""
+
+#: google-maps-widget.php:643
+msgid "I already rated the plugin"
+msgstr ""
+
+#: google-maps-widget.php:661
+msgid "Configure the API key"
+msgstr ""
+
+#: google-maps-widget.php:662
+msgid "Dismiss notice"
+msgstr ""
+
+#: google-maps-widget.php:705
+msgid "Superb! PRO features are active ;)"
+msgstr ""
+
+#: google-maps-widget.php:706
+msgid "Pick an address by drag &amp; dropping the pin"
+msgstr ""
+
+#: google-maps-widget.php:707
+msgid ""
+"An undocumented error has occured. Please refresh the page and try again."
+msgstr ""
+
+#: google-maps-widget.php:708 google-maps-widget.php:710
+#: google-maps-widget.php:919
+msgid "Google Maps Widget PRO"
+msgstr ""
+
+#: google-maps-widget.php:709
+msgid "Pins Library"
+msgstr ""
+
+#: google-maps-widget.php:712
+msgid ""
+"Drag&drop address picking interface is a PRO feature. Interested in "
+"switching to PRO?"
+msgstr ""
+
+#: google-maps-widget.php:929
+msgid "Export &amp; Import"
+msgstr ""
+
+#: google-maps-widget.php:936
+msgid "Google Maps API Key"
+msgstr ""
+
+#: google-maps-widget.php:944
+msgid "Map Shortcode"
+msgstr ""
+
+#: google-maps-widget.php:955
+msgid "Track with Google Analytics"
+msgstr ""
+
+#: google-maps-widget.php:959
+msgid "Include jQuery"
+msgstr ""
+
+#: google-maps-widget.php:963
+msgid "Include Colorbox &amp; Thumbnail CSS"
+msgstr ""
+
+#: google-maps-widget.php:967
+msgid "Include Colorbox JS"
+msgstr ""
+
+#: google-maps-widget.php:971
+msgid "Disable Admin Tooltips"
+msgstr ""
+
+#: google-maps-widget.php:981
+msgid "Save Settings"
+msgstr ""
+
+#: google-maps-widget.php:988
+msgid "Export widgets"
+msgstr ""
+
+#: google-maps-widget.php:993
+msgid "Import widgets"
+msgstr ""
+
+#: google-maps-widget.php:1011
+msgid "License Key"
+msgstr ""
+
+#: google-maps-widget.php:1017 google-maps-widget.php:1024
+msgid "License Key Status"
+msgstr ""
+
+#: google-maps-widget.php:1029
+msgid "Save and Validate License Key"
+msgstr ""
+
+#: google-maps-widget.php:1042
+msgid "Please double-check the license key. The format is not valid."
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.googlemapswidget.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Display a single-image super-fast loading Google map in a widget. A larger, "
+"full featured map is available as an image replacement or in a lightbox. "
+"Includes shortcode support and numerous options."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Web factory Ltd"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.webfactoryltd.com/"
+msgstr ""

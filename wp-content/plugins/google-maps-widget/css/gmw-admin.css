@@ -1,0 +1,1149 @@
+/*
+ * Google Maps Widget
+ * (c) Web factory Ltd, 2012 - 2018
+ */
+
+@import url(//fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light&amp;lang=en);
+
+.settings_page_gmw_options .form-table td {
+  padding: 15px 10px;
+}
+
+ul.normal {
+  list-style-position: inside;
+  list-style-type: disc;
+  padding: 5px 0;
+  margin: 0 0 0 15px;
+}
+
+.wrap.gmw-options .ui-tabs {
+  margin-top: 30px;
+}
+
+.wrap.gmw-options .ui-tabs li.ui-tabs-active a {
+  font-weight: bold;
+  color: #404448;
+}
+
+.wrap.gmw-options .ui-tabs li.ui-tabs-active {
+  border-bottom: 3px solid #F1F1F1 !important;
+  background-color: #f1f1f1;
+}
+
+.wrap.gmw-options .ui-tabs li {
+  background-color: #dfdfdf;
+}
+
+.wrap.gmw-options .ui-tabs li a {
+  color: #464646;
+  font-weight: normal;
+  font-size: 13px;
+  padding: 0 20px;
+}
+
+.wrap.gmw-options .ui-tabs li.ui-state-hover a {
+  color: #404448 !important;
+}
+
+.gmw-label {
+  width: 115px;
+  display: inline-block;
+}
+
+#gmw_activate_notice b {
+  font-weight: bold;
+}
+
+.control-panel-widgets span.label-holder {
+}
+
+.gmw-tabs p.colorpicker_section {
+  height: 30px;
+}
+
+.gmw-tabs p.colorpicker_section label {
+  padding-bottom: 18px;
+}
+
+.gmw-tabs p.colorpicker_section .wp-picker-container {
+  margin-top: 3px;
+}
+
+.gmw-tabs .gmw_lightbox_fullscreen_custom_section {
+  display: inline-block;
+  margin-top: 13px;
+}
+
+.gmw-tabs .select2-container--default .select2-selection--multiple {
+  border: 1px solid #ddd;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+  border-radius: 0;
+}
+
+.select2-container .select2-search__field:not([placeholder='']) {
+  width: 100% !important;
+  margin-right: 100000px;
+}
+
+.gmw-tabs .select2-container--default .select2-selection--multiple ul {
+  margin-bottom: -5px;
+}
+
+.gmw-label-wide {
+  width: 90%;
+}
+
+.gmw-tabs {
+  border-bottom: 1px solid #e5e5e5 !important;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.gmw-tabs input.small-text {
+  width: 65px;
+  padding: 1px 6px;
+}
+
+.gmw-tabs select, .gmw-tabs input[type=text]:not(.wp-color-picker) {
+  min-width: 230px;
+  max-width: 330px;
+  width: 100%;
+}
+
+.gmw-tabs .widefat {
+  max-width: 99%;
+}
+
+.gmw-tabs input:invalid {
+  border: 1px solid red;
+}
+
+.gmw-tabs input {
+  max-width: 330px;
+}
+
+option.gmw_promo {
+  color: #e14d43;
+}
+
+.gmw-api-key-error {
+  border: 1px solid #ff3f3f;
+  color: #ff3f3f;
+  padding: 10px 15px;
+  text-align: justify;
+}
+
+.gmw-upgrade-notice-widget {
+  border: 1px solid #008ec2;
+  padding: 10px 15px;
+  text-align: justify;
+}
+
+body.widgets-php .select2-container--default .select2-results__option[aria-disabled=true] {
+  color: #e14d43;
+}
+
+#gmw_promo_dialog {
+  padding: 0;
+  display: none;
+}
+
+.gmw-dialog {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.gmw-dialog .ui-dialog-titlebar {
+  line-height: 70px;
+  height: 70px;
+  background-color: #303030;
+  text-align: center;
+}
+
+.gmw-map-dialog .ui-dialog-titlebar {
+  line-height: 70px;
+  height: 70px;
+  font-weight: bold;
+  padding-left: 26px;
+}
+
+.gmw-map-dialog .ui-dialog-titlebar-close {
+  top: 19px;
+  right: 18px;
+}
+
+.gmw-dialog .ui-dialog-titlebar span {
+  color: #fff;
+}
+
+.gmw-dialog .ui-dialog-titlebar span b {
+  color: #0085ba;
+  font-weight: normal;
+}
+
+.gmw-dialog .footer {
+  padding: 20px 135px;
+  background-color: #5fb5d8;
+  color: #333;
+}
+
+.gmw-dialog .content {
+  background-color: #FFF;
+}
+
+.gmw-dialog .dashicons {
+  display: block !important;
+  width: 100%;
+}
+
+.gmw-left-box,
+.gmw-right-box {
+  position: relative;
+  min-height: 300px;
+  padding: 35px 50px 55px 50px !important;
+  width: 34.6%;
+  float: left;
+  text-align: center;
+}
+
+.gmw-left-box .gmw_goto_activation.button-primary,
+.gmw-right-box .gmw_goto_activation.button-secondary {
+  position: absolute;
+  bottom: 40px;
+  left: 77px;
+  letter-spacing: 1px;
+  width: 170px;
+}
+
+.gmw-left-box {
+  background: #0085ba;
+}
+
+.gmw-right-box {
+  background: #e5f3f8;
+}
+
+
+.gmw-dialog .boxed-h {
+  padding: 30px 0px;
+  margin: 0;
+  display: block;
+}
+
+.xgmw-dialog h3 b {
+  color: #fe4765;
+}
+
+.gmw-dialog .ui-dialog-title {
+  line-height: 60px;
+  color: rgb(137, 137, 137);
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.gmw-dialog .ui-dialog-title img {
+  height: 30px;
+  padding-left: 35px;
+  padding-top: 20px;
+}
+
+.gmw-dialog .ui-dialog-titlebar-close {
+  top: 18px;
+  right: 18px;
+}
+
+#gmw_promo_dialog ul {
+  list-style-position: inside;
+  list-style-type: disc;
+  padding: 15px 0;
+}
+
+.gmw-dialog input {
+  width: 100%;
+  height: 45px;
+}
+
+.gmw-dialog input.error {
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #D54E21 !important;
+}
+
+.gmw-dialog .input_row {
+  margin-bottom: 16px;
+}
+
+.gmw-dialog .big-button {
+  height: 54px;
+  line-height: 53px;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 5px;
+  text-shadow: none;
+}
+
+#gmw_promo_dialog span.error {
+  color: #dd3d36;
+  padding: 8px 0 0 1px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.gmw_spinner {
+  background: url(../images/spinner.gif) no-repeat center center;
+  -webkit-background-size: 20px 20px;
+  background-size: 20px 20px;
+}
+
+a.button.button-secondary.gmw_spinner, a.button.button-primary.gmw_spinner {
+  background: url(../images/spinner.gif) no-repeat center center;
+  -webkit-background-size: 20px 20px;
+  background-size: 20px 20px;
+}
+
+.gmw_disabled {
+  pointer-events: none;
+  opacity: .65;
+  filter: alpha(opacity=65);
+}
+
+#gmw_promo_dialog .center {
+  text-align: center;
+  color: #fff;
+}
+
+#gmw_promo_dialog .footer .center {
+  text-align: center;
+  color: #333;
+}
+
+#gmw_promo_dialog .center a, #gmw_promo_dialog .center a:visited {
+  color: #fff;
+}
+
+#gmw_promo_dialog .footer .center a, #gmw_promo_dialog .footer .center a:visited {
+  color: #0073aa;
+}
+
+#gmw_promo_dialog .footer .center a:hover {
+  color: #00a0d2;
+}
+
+#gmw_dialog_activate .footer {
+  padding: 20px 135px 60px 135px;
+}
+
+
+#gmw-info h4 {
+  margin: 25px 0 5px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#gmw-info p {
+  margin-top: 5px;
+}
+
+input:required:invalid, #gmw_promo_dialog input:required:invalid {
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #D54E21;
+}
+
+.gmw-options p.description, .gmw-options span.description {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  margin-left: 5px;
+  line-height: 180%;
+}
+
+.gmw-tabs .iris-picker {
+  position: absolute !important;
+  z-index: 99;
+}
+
+#gmw-thumb > p, #gmw-lightbox > p {
+  min-height: 30px;
+}
+
+#gmw_map_canvas {
+  width: 100%;
+  height: 400px;
+}
+
+#pins_container {
+  height: 400px;
+  overflow: auto;
+  text-align: center;
+  margin-left: -15px;
+}
+
+#pins_container>a {
+  padding: 10px;
+  margin: 5px 8px;
+  border: 1px solid #fff;
+  width: 80px;
+  height: 80px;
+  font-size: 12px;
+  word-break: break-all;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: #111;
+  vertical-align: top;
+}
+
+#pins_container>a span {
+  display: block;
+}
+
+#pins_container a:hover {
+  border: 1px solid #e5e5e5;
+}
+
+#search_header input[type=search] {
+  width: 45%;
+  padding: 17px;
+  font-size: 17px;
+}
+#search_header select {
+  padding: 17px;
+  font-size: 17px;
+  height: 59px;
+  line-height: 100%;
+  margin-top: -5px;
+}
+
+#search_header {
+  text-align: center;
+  padding: 10px;
+}
+
+.thumb_pin_img_library_preview {
+  height: 28px;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+/*
+ * jQuery UI Tabs 1.8.14
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs { position: relative; padding: 0; zoom: 1;margin-top:25px } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: 0 0 0 5px; box-sizing: border-box; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 2px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { text-decoration: none; outline: none; box-shadow: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; border-bottom: 1px solid white !important; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-active { margin-bottom: -1px; border-bottom: 3px solid white !important; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a { outline: none;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 0 15px; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+.ui-tabs .ui-tabs-nav li a {
+  font-weight: 200;
+  line-height: 32px;
+  color: #AAAAAA;
+  padding: 0 7px;
+  display: block;
+}
+
+.ui-tabs ul.ui-tabs-nav li {
+  border-color: #DFDFDF #DFDFDF #FFFFFF;
+  border-radius: 3px 3px 0 0;
+  border-style: solid;
+  border-width: 1px 1px 0;
+  color: #AAAAAA;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 0 7px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
+
+ul.ui-tabs-nav{
+  float: left;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0;
+  width: 100%;
+  margin-bottom: 20px !important
+}
+
+.ui-state-hover a, .ui-state-active a {
+  color: #333333 !important;
+}
+
+.ui-state-hover a {
+  color: #0073aa !important;
+}
+
+/* fixes for customizer */
+#customize-theme-controls .ui-tabs ul.ui-tabs-nav li {
+  margin: 0 0 -1px 10px;
+}
+#customize-theme-controls .ui-tabs .ui-tabs-nav li a {
+  padding: 0 6px;
+}
+#customize-theme-controls .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  border-bottom: 3px solid white !important;
+}
+#customize-theme-controls .ui-tabs .ui-tabs-panel {
+  min-width: 440px;
+}
+#available-widgets-list [class*=googlemapswidget] .widget-title:before{
+  content: "\f230";
+}
+
+/* upgrade dialog */
+
+.gmw-content-box-alternate h3,
+.gmw-content-box h3 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.gmw-content-box h3,
+.gmw-content-box p {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.gmw-content-box-alternate i.dashicons,
+.gmw-content-box i.dashicons {
+  font-size: 32px;
+  padding: 15px 0px;
+}
+
+.gmw-content-box-alternate i {
+  color: #666 !important;
+}
+
+.gmw-content-box i {
+  color: #fff;
+}
+
+.gmw-content-box-alternate h3,
+.gmw-content-box-alternate p {
+  color: #666666;
+  margin: 0;
+  padding: 0;
+}
+
+.gmw-content-box ul li:before {
+  content:'\f147';
+  font-family: 'Dashicons';
+  display: inline-block;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+.gmw-content-box ul li.gmw-not-available:before {
+  content:'\f335';
+}
+
+.gmw-content-box ul li {
+  position: relative;
+  padding-left: 25px;
+  text-align: left;
+  padding-bottom: 3px;
+  color: #fff;
+}
+
+.gmw-content-box ul {
+  list-style: none !important;
+}
+
+.gmw-content-box-alternate ul li {
+  color: #666;
+}
+
+.gmw_goto_activation.button-primary {
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background: #0085ba;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 15px 40px;
+  text-shadow:none !important;
+  height: auto !important;
+  box-shadow:none !important;
+}
+
+.gmw_goto_activation.button-primary:hover {
+  background: rgba(0,0,0,0.15) !important;
+}
+
+.gmw_goto_activation.button-primary:visited {
+  background: #0085ba;
+  border: 2px solid #fff;
+}
+
+.gmw_goto_activation.button-secondary {
+  border: 2px solid #666;
+  box-shadow: none !important;
+  border-radius: 4px;
+  background: #e5f3f8;
+  color: #666;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 15px 0;
+  text-shadow:none !important;
+  height: auto !important;
+}
+
+.gmw_goto_activation.button-secondary:hover {
+  background: rgba(0,0,0,0.15);
+}
+
+.gmw_goto_pro.button-secondary {
+  border: 2px solid #d54e21;
+  box-shadow: none !important;
+  border-radius: 4px;
+  background: #fff;
+  color: #d54e21;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 20px;
+  text-shadow:none !important;
+  height: auto !important;
+  margin-top: 20px;
+}
+
+.gmw_goto_pro.button-secondary:hover {
+  background: rgba(0,0,0,0.15);
+}
+
+.gmw_goto_trial.button-secondary {
+  border: 2px solid #666;
+  box-shadow: none !important;
+  border-radius: 4px;
+  background: #fff;
+  color: #666 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 20px;
+  text-shadow:none !important;
+  height: auto !important;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.gmw_goto_trial.button-secondary:hover {
+  background: rgba(0,0,0,0.15);
+}
+
+.footer .gmw_goto_trial {
+  background: #f5f5f5;
+  margin-top: 0;
+}
+
+.gmw-footer-intro {
+  display: block;
+  padding: 30px 40px;
+  text-align: center;
+  margin: 0px !important;
+  font-size: 15px;
+}
+
+.gmw-footer-intro a {
+  color: #0085ba;
+}
+
+
+/* Donate */
+#gmw_dialog_activate .content {
+  padding: 60px 130px 20px 130px;
+  background-color: #5fb5d8;
+  border: 1px solid #5fb5d8;
+}
+
+#gmw_dialog_activate .content a, #gmw_dialog_activate .content a:visited {
+  color: #fff;
+}
+
+#gmw_code {
+  border: 1px solid #dcdcdc;
+  box-shadow:none;
+  padding: 25px !important;
+  height: 60px !important;
+  display: block;
+  border-radius:3px;
+}
+
+#gmw_activate {
+  display: block;
+  border-radius:4px;
+  background-color: #0085ba;
+  color: #fff !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 15px 40px;
+  text-shadow:none !important;
+  height: auto !important;
+  box-shadow:none !important;
+}
+
+
+#gmw_activate:hover {
+  background: #00719e !important;
+}
+
+.gmw-faq-ul li {
+  color: #fff !important;
+}
+
+.gmw-faq-ul li a, .gmw-faq-ul li a:visited {
+  color: #fff !important;
+}
+
+/* Trial */
+#gmw_dialog_trial .content {
+  padding: 40px 130px 15px 130px;
+  background-color: #5fb5d8;
+  border: 1px solid #5fb5d8;
+}
+
+#gmw_dialog_subscribe .content a {
+  color: #0085ba;
+}
+
+#gmw_dialog_trial h3 {
+  text-align: center;
+  color: #fff;
+}
+
+#gmw_dialog_trial input[type="text"] {
+  border: 1px solid #dcdcdc;
+  box-shadow:none;
+  padding: 25px !important;
+  height: 60px !important;
+  display: block;
+  border-radius:3px;
+}
+
+#gmw_promo_dialog input[type="text"]:focus {
+  border: 1px solid #5b9dd9;
+}
+
+#gmw_dialog_trial .button.button-primary, #gmw_dialog_activate .button.button-primary {
+  display: block;
+  border-radius:4px;
+  background: #0085ba;
+  color: #fff !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 15px 40px;
+  text-shadow: none !important;
+  height: auto !important;
+  box-shadow: none !important;
+}
+
+#gmw_dialog_trial .button.button-primary:hover {
+  background: #00719e !important;
+}
+
+#gmw_dialog_subscribe .footer, #gmw_dialog_trial .footer {
+  background: #5fb5d8;
+}
+
+#gmw_dialog_trial .footer {
+  padding: 15px 135px 50px 135px;
+}
+
+
+#gmw_dialog_subscribe .footer p,
+#gmw_dialog_subscribe .footer ul li {
+  color: #fff;
+}
+
+.gmw-pro-red {
+  color: #d54e21;
+  font-weight: bold;
+}
+
+.gmw_pointer h3 {
+  background-color: #f7f7f7;
+  border: 1px solid #dfdfdf;
+  border-bottom: none;
+  padding-left: 15px;
+  color: #797979;
+}
+.gmw_pointer h3:before, .gmw_pointer:not(.show_dismiss) .wp-pointer-buttons {
+  display: none;
+}
+
+.gmw-pick-address {
+  display: inline-block;
+}
+
+.input-address-group {
+  width: 100%;
+  position: relative;
+}
+
+.input-address-group input {
+  position: relative;
+  z-index:100;
+  padding-right: 55px;
+  height: 29px;
+  max-width: 100% !important;
+  padding: 4px 10px;
+  margin: 0px !important;
+}
+
+.input-address-group .gmw-pick-address {
+  position: absolute;
+  top: 0;
+  right:-1px;
+  z-index: 9999;
+  padding: 4px 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: none;
+  height: 29px;
+}
+
+#gmw-lightbox .input-address-group {
+  display: inline-block;
+  max-width: 330px;
+}
+
+.gmw_dialog_current_coordinates {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  max-width: 420px;
+  font-size: 14px;
+}
+
+.gmw_closest_matching_address {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  max-width: 420px;
+  font-size: 14px;
+}
+
+.gmw_close_save_map_dialog {
+  margin-top: 5px !important;
+}
+
+#gmw_dialog_pro_features .features-left {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+#gmw_dialog_pro_features .features-right {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#gmw_dialog_pro_features .features-list {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+#gmw_dialog_pro_features li {
+  margin-bottom: 8px;
+  list-style-position: inside;
+  text-indent: -18px;
+  padding-left: 18px;
+}
+
+#gmw_dialog_pro_features li:first-letter {
+  text-transform: capitalize
+}
+
+#gmw_dialog_pro_features .content {
+  padding: 0 35px 20px 55px;
+}
+
+#gmw_dialog_pro_features h4 {
+  text-align: center;
+  margin: 30px 0 35px 0;
+  font-size: 19px;
+}
+
+#gmw_dialog_pro_features .footer {
+  background-color: #f5f5f5;
+}
+
+.gmw_goto_intro.button-secondary {
+  border: 2px solid #d54e21;
+  box-shadow: none !important;
+  border-radius: 4px;
+  background: #f5f5f5;
+  color: #d54e21 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 20px;
+  text-shadow:none !important;
+  height: auto !important;
+  margin: 0 0 10px 0;
+}
+
+.gmw_goto_intro.button-secondary:hover {
+  background: #d54e21;
+  border-color: #d54e21;
+  color: #fff !important;
+}
+
+#gmw-pricing-table {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-spacing: 0;
+}
+#gmw-pricing-table td {
+  width: 33%;
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.53);
+  font-size: 14.5px;
+  color: #fff;
+  padding: 10px 30px 10px 30px;
+  opacity: 0.85;
+}
+#gmw-pricing-table tr {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+#gmw-pricing-table tr td:first-child {
+  background-color: #0085ba;  
+}
+#gmw-pricing-table tr td:nth-child(2) {
+  background-color: #1fbc61;
+}
+#gmw-pricing-table tr td:last-child {
+  background-color: #3ba266;
+}
+
+#gmw-pricing-table h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  padding: 10px 0 0 0;
+  line-height: 115%;
+  text-align: center;
+}
+
+#gmw-pricing-table td.hover {
+  opacity: 1;
+}
+#gmw-pricing-table .dashicons {
+  width: auto;
+  display: inline-block !important;
+}
+
+.gmw-promo-box {
+  padding: 20px 5px;
+  width: 33%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.gmw-promo-box * {
+  opacity: 0.85;
+  filter: alpha(opacity = 85);
+}
+
+.gmw-promo-box:hover {
+  cursor: pointer;
+}
+
+.gmw-promo-box-hover * {
+  opacity: 1;
+  filter: alpha(opacity = 100);
+}
+
+.gmw-promo-icon {
+  display: block;
+  text-align: center;
+}
+
+.gmw-promo-icon img {
+  display: inline-block;
+  height: 40px;
+}
+
+.gmw-promo-box-agency .gmw-promo-icon img, .gmw-promo-box-lifetime .gmw-promo-icon img {
+  margin-top: 20px;
+}
+
+.gmw-promo-button:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.gmw-promo-button {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: block;
+  font-weight: bold;
+  font-size: 22px;
+  width: 180px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 15px auto 15px auto;
+}
+
+.gmw-promo-button small {
+  font-size: x-small;
+  line-height: 0px;
+}
+
+#gmw-pricing-table .instant-download {
+  text-align: center;
+  display: inline-block;
+  font-style: italic;
+}
+
+.gmw-promo-button a {
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.gmw-promo-button-extra a {
+  padding: 15px 0;
+}
+
+.gmw-promo-button-extra {
+  margin-top: -5px;
+}
+
+.gmw-promo-button span {
+  color: white;
+  padding: 5px 0;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  background-color: #fff;
+  color: #1fbc61;
+  width: 100%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #fff;
+}
+
+#gmw-pricing-table tr td:first-child .gmw-promo-button span {
+  color: #0085ba;
+}
+
+.gmw-promo-description {
+  padding: 0;
+}
+
+.gmw-promo-description h3 {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 120%;
+  text-align: center;
+}
+
+.gmw-promo-description span {
+  font-size: 14.5px;
+  display: block;
+  color: #fff;
+}
+
+.gmw-promo-box-lifetime {
+  background-color: #1fbc61;
+}
+
+.gmw-promo-box-agency {
+  background-color: #3ba266;
+}
+
+.gmw-promo-box-yearly {
+  background-color: #0085ba;
+}
+
+.gmw-promo-box-yearly .gmw-promo-button {
+  text-transform: none;
+}
+
+.gmw-promo-box-trial {
+  background-color: #5fb5d8;
+}
+
+#gmw_dialog_intro .header {
+  padding: 30px 80px;
+  color: #666;
+  text-align: center;
+  font-size: 15px;
+}
+
+#gmw_dialog_intro .header p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.gmw-discount {
+  padding: 16px 20px;
+  text-align: center;
+  background-color: #f4fcf7;
+  color: #1fbc61;
+  border: 1px solid #1fbc61;
+  border-radius: 10px;
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+#gmw_dialog_pro_features .footer .button-secondary {
+  min-width: 165px;
+}
+
+table.disabled, h3.disabled {
+  opacity: 0.5;
+}
+
+.gmw-promo-box strike {
+  font-weight: normal;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 782px) {
+  .gmw-label.label-holder {
+      display: none;
+  }
+
+  .ui-tabs .ui-tabs-nav li a {
+      padding: 0 2px;
+  }
+  .ui-tabs ul.ui-tabs-nav li {
+      margin: 0;
+  }
+}
