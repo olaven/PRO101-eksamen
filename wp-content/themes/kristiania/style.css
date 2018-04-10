@@ -1,0 +1,13 @@
+:root{
+    /*Farger, hentet fra http://designmanual.kristiania.no*/
+    --rod      : #C9243F; 
+    --burgunder: #8D285C; 
+    --fiolett  : #502C78; 
+    --skiferblå: #68789B; 
+    --turkis   : #89D0C8; 
+}
+
+body{
+    background-color: var(--skiferblå); 
+    color: var(--fiolett); 
+}

@@ -1,0 +1,38 @@
+.wp-bp-region-title {
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.wp-bp-region-title.first-region-title {
+    margin-top: 0px;
+}
+
+#customize-control-frontpage_cover_bg_img .background-color,
+#customize-control-frontpage_cover_bg_img .background-repeat,
+#customize-control-frontpage_cover_bg_img .background-position,
+#customize-control-frontpage_cover_bg_img .background-size,
+#customize-control-frontpage_cover_bg_img .background-attachment,
+#customize-control-frontpage_cover_bg_img .background-image h4 {
+    display: none !important;
+}
+
+#accordion-section-upgrade_theme .accordion-section-title {
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+}
+
+#accordion-section-upgrade_theme:hover .accordion-section-title, #accordion-section-upgrade_theme:focus .accordion-section-title, #accordion-section-upgrade_theme:active .accordion-section-title {
+    text-shadow: none !important;
+}
+
+#accordion-section-upgrade_theme .accordion-section-title:focus, #accordion-section-upgrade_theme .accordion-section-title:active {
+    text-shadow: none !important;
+}
+
+#accordion-section-upgrade_theme .accordion-section-title:after {
+    color: #fff;
+}

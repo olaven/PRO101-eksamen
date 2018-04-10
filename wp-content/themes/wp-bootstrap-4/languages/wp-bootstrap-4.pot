@@ -1,0 +1,877 @@
+# Copyright (C) 2018 TwoPoints
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Bootstrap 4 1.0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/wp-bootstrap-4\n"
+"POT-Creation-Date: 2018-03-13 11:26:29+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:32
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:36
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: 404.php:48
+msgid "Most Used Categories"
+msgstr ""
+
+#: archive.php:52 index.php:76 search.php:52
+msgid "Newer Posts"
+msgstr ""
+
+#: archive.php:53 index.php:77 search.php:53
+msgid "Older Posts"
+msgstr ""
+
+#. translators: %d: number of comments.
+
+#: comments.php:32
+msgid "%d comment"
+msgid_plural "%d comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:41 comments.php:58
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:42 comments.php:59
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:64
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:74
+msgid "Enter your comment...*"
+msgstr ""
+
+#: comments.php:76
+msgid "Name *"
+msgstr ""
+
+#: comments.php:77
+msgid "Email *"
+msgstr ""
+
+#: comments.php:78
+msgid "Website"
+msgstr ""
+
+#: comments.php:84
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:85
+msgid "Cancel"
+msgstr ""
+
+#: comments.php:86
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:91
+msgid "Your email address will not be published. Required fields are marked *"
+msgstr ""
+
+#: footer.php:59
+msgid "Bootstrap 4 WordPress Theme"
+msgstr ""
+
+#. translators: 1: Theme name.
+
+#: footer.php:63
+msgid "Theme Name: %1$s."
+msgstr ""
+
+#: functions.php:33
+msgid "Primary"
+msgstr ""
+
+#: functions.php:89
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:91 functions.php:101 functions.php:111 functions.php:121
+#: functions.php:131
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:99
+msgid "Footer Column 1"
+msgstr ""
+
+#: functions.php:109
+msgid "Footer Column 2"
+msgstr ""
+
+#: functions.php:119
+msgid "Footer Column 3"
+msgstr ""
+
+#: functions.php:129
+msgid "Footer Column 4"
+msgstr ""
+
+#: header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: inc/custom-comment.php:19
+msgid "&#8226; Post Author &#8226;"
+msgstr ""
+
+#. translators: %1 %2: date and time.
+
+#: inc/custom-comment.php:24
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/custom-comment.php:29
+msgid "Comment is awaiting approval"
+msgstr ""
+
+#: inc/custom-comment.php:42
+msgid "Reply"
+msgstr ""
+
+#: inc/custom-comment.php:43
+msgid "Edit"
+msgstr ""
+
+#. translators: %s: post date.
+
+#: inc/template-tags.php:29
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. translators: %s: post author.
+
+#: inc/template-tags.php:35
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: %s: post title
+
+#: inc/template-tags.php:69
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+
+#: inc/template-tags.php:86 template-parts/content-page.php:40
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:330
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:332
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:370
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:386
+#: inc/tgmpa/class-tgm-plugin-activation.php:827
+#: inc/tgmpa/class-tgm-plugin-activation.php:2533
+#: inc/tgmpa/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:387
+#: inc/tgmpa/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:388
+#: inc/tgmpa/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:390
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:392
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:394
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:396
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:934
+#: inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:937
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1121
+#: inc/tgmpa/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:1982
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2342
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2388
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2392
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2396
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2400
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2603
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2608
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2614
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3498
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3501
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3503
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3507
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3509
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3512
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3515
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3517
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+
+#: inc/tgmpa/class-tgm-plugin-activation.php:3520
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/theme-options/add-settings.php:12
+msgid "Theme Options"
+msgstr ""
+
+#: inc/theme-options/add-settings.php:17
+msgid "Logo Height (in px)"
+msgstr ""
+
+#: inc/theme-options/add-settings.php:22
+msgid "Minimum height 25px & maximum height 200px. Width will be adjusted automatically."
+msgstr ""
+
+#: inc/theme-options/blog-home.php:4
+msgid "Blog Homepage"
+msgstr ""
+
+#: inc/theme-options/blog-home.php:14
+msgid "Cover Section"
+msgstr ""
+
+#: inc/theme-options/blog-home.php:19
+msgid "Display Cover Section"
+msgstr ""
+
+#: inc/theme-options/blog-home.php:27 inc/theme-options/static-frontpage.php:13
+msgid "Cover Title"
+msgstr ""
+
+#: inc/theme-options/blog-home.php:31 index.php:26
+msgid "WordPress + Bootstrap 4 = "
+msgstr ""
+
+#: inc/theme-options/blog-home.php:36
+msgid "Cover Lead Text"
+msgstr ""
+
+#: inc/theme-options/blog-home.php:39 inc/theme-options/static-frontpage.php:24
+#: index.php:27 template-parts/front-page/cover.php:3
+msgid "\"WP Bootstrap 4\" is a perfect base for your WordPress website. It is simple yet powerful and is built on top of World's most popular framework for responsive websites."
+msgstr ""
+
+#: inc/theme-options/blog-home.php:44 inc/theme-options/static-frontpage.php:29
+msgid "Cover Button Text"
+msgstr ""
+
+#: inc/theme-options/blog-home.php:47 inc/theme-options/static-frontpage.php:32
+#: index.php:29 template-parts/front-page/cover.php:5
+msgid "Download Now"
+msgstr ""
+
+#: inc/theme-options/blog-home.php:52 inc/theme-options/static-frontpage.php:37
+msgid "Cover Button Link"
+msgstr ""
+
+#: inc/theme-options/blog-home.php:63
+msgid "Featured Posts Slider"
+msgstr ""
+
+#: inc/theme-options/blog-home.php:68
+msgid "Display Posts Slider"
+msgstr ""
+
+#: inc/theme-options/blog-home.php:76
+msgid "Number of Posts In Slider"
+msgstr ""
+
+#: inc/theme-options/blog-home.php:90
+msgid "Select Posts"
+msgstr ""
+
+#: inc/theme-options/layout.php:4
+msgid "Layout Settings"
+msgstr ""
+
+#: inc/theme-options/layout.php:12
+msgid "Container Max Width (in px)"
+msgstr ""
+
+#: inc/theme-options/layout.php:38
+msgid "Header Content Within Container"
+msgstr ""
+
+#: inc/theme-options/layout.php:47
+msgid "Sticky Header"
+msgstr ""
+
+#: inc/theme-options/layout.php:51
+msgid "Some browsers may be outdated to support this feature."
+msgstr ""
+
+#: inc/theme-options/layout.php:57
+msgid "Default Sidebar Position"
+msgstr ""
+
+#: inc/theme-options/layout.php:58
+msgid "This can be overwritten on the particular page by using a page template."
+msgstr ""
+
+#: inc/theme-options/layout.php:63
+msgid "Right"
+msgstr ""
+
+#: inc/theme-options/layout.php:64
+msgid "Left"
+msgstr ""
+
+#: inc/theme-options/layout.php:65
+msgid "No Sidebar"
+msgstr ""
+
+#: inc/theme-options/layout.php:71
+msgid "Hide Sidebar On Mobile"
+msgstr ""
+
+#: inc/theme-options/layout.php:76
+msgid "No."
+msgstr ""
+
+#: inc/theme-options/layout.php:77
+msgid "Yes, hide sidebar on small devices."
+msgstr ""
+
+#: inc/theme-options/layout.php:91
+msgid "Blog Display"
+msgstr ""
+
+#: inc/theme-options/layout.php:92
+msgid "Choose between a full post or an excerpt for the blog and archive pages."
+msgstr ""
+
+#: inc/theme-options/layout.php:97
+msgid "Post excerpt"
+msgstr ""
+
+#: inc/theme-options/layout.php:98
+msgid "Full Post"
+msgstr ""
+
+#: inc/theme-options/static-frontpage.php:4
+msgid "Static Frontpage"
+msgstr ""
+
+#: inc/theme-options/static-frontpage.php:16
+#: template-parts/front-page/cover.php:2
+msgid "Bootstrap 4 Theme For A Perfect Website!"
+msgstr ""
+
+#: inc/theme-options/static-frontpage.php:21
+msgid "Cover Lead"
+msgstr ""
+
+#: inc/theme-options/static-frontpage.php:45
+msgid "Cover Background Image"
+msgstr ""
+
+#: inc/theme-options/static-frontpage.php:62
+msgid "1st Featured Page"
+msgstr ""
+
+#: inc/theme-options/static-frontpage.php:69
+msgid "2nd Featured Page"
+msgstr ""
+
+#: inc/theme-options/static-frontpage.php:76
+msgid "3rd Featured Page"
+msgstr ""
+
+#: inc/theme-options/static-frontpage.php:84
+msgid "Show Main Content"
+msgstr ""
+
+#: inc/theme-options/theme-colors.php:5
+msgid "Body Background Color"
+msgstr ""
+
+#: inc/theme-options/theme-colors.php:6
+msgid "Theme Colors"
+msgstr ""
+
+#: inc/theme-options/theme-colors.php:13
+msgid "Header Background Color"
+msgstr ""
+
+#: inc/theme-options/theme-colors.php:30
+msgid "Links & Buttons Color"
+msgstr ""
+
+#: inc/theme-options/theme-colors.php:76
+msgid "Links & Buttons Hover Color"
+msgstr ""
+
+#: inc/theme-options/theme-colors.php:109
+msgid "Footer Background Color"
+msgstr ""
+
+#: inc/theme-options/theme-colors.php:124
+msgid "Footer Text Color"
+msgstr ""
+
+#: inc/theme-options/theme-colors.php:139
+msgid "Footer Link Color"
+msgstr ""
+
+#: inc/theme-options/typography.php:4
+msgid "Typography"
+msgstr ""
+
+#: inc/theme-options/typography.php:14
+msgid "Body Typography"
+msgstr ""
+
+#: inc/theme-options/typography.php:32
+msgid "Heading Typography"
+msgstr ""
+
+#: inc/woocommerce.php:253
+msgid "View your shopping cart"
+msgstr ""
+
+#. translators: number of items in the mini cart.
+
+#: inc/woocommerce.php:255
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: search query.
+
+#: search.php:34
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:2
+msgid "Search&hellip;"
+msgstr ""
+
+#: single.php:34
+msgid "&laquo; Previous Post"
+msgstr ""
+
+#: single.php:35
+msgid "Next Post &raquo;"
+msgstr ""
+
+#: template-parts/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+
+#: template-parts/content-none.php:26
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:39
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:45
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:25 template-parts/content.php:53
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:16
+msgid "Sticky Post"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+
+#: template-parts/content.php:42
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content.php:62 template-parts/posts-slider.php:46
+msgid "Continue Reading"
+msgstr ""
+
+#: template-parts/front-page/services.php:26
+#: template-parts/front-page/services.php:41
+#: template-parts/front-page/services.php:56
+msgid "Read More"
+msgstr ""
+#. Theme Name of the plugin/theme
+msgid "WP Bootstrap 4"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://bootstrap-wp.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "\"WP Bootstrap 4\" is a simple & easy to use WordPress theme. It is based on world's most popular framework for responsive websites, Twitter Bootstrap 4. \"WP Bootstrap 4\" is a perfect combination of Bootstrap 4 and WordPress. It is fast and light-weight with around 20 kb style.css. It is also search engine friendly. It has a built-in slider for featured posts on blog's home page. It supports all major & popular WordPress plugins like Jetpack, Contact Form 7, Elementor, Beaver Builder, SiteOrigin Page Builder etc. Check demo on https://bootstrap-wp.com"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "TwoPoints"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width Without Container"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Left Sidebar"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "No Sidebar (Full Width)"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Right Sidebar"
+msgstr ""
