@@ -7,7 +7,7 @@ EKsamensprosjektet skal startes på i løpet av mai.
 * Alle bruker sin egen, lokale installasjon av Wordpress/Bitnami. 
 * Kun mappen ```apps/apps/wordpress/htdocs/wp-content``` skal deles
 Prosessen for å få dette til å fungere er litt kronglete, men here we go: 
-  1. Ta en midlertidig backup av ```àpps/apps/wordpress/htdocs``` (Det gjorde ikke jeg, erfaring snakker) 
+  1. Ta en midlertidig backup av ```apps/apps/wordpress/htdocs``` (Det gjorde ikke jeg, erfaring snakker) 
   2. Åpne terminalen og ```cd``` til ```apps/apps/wordpress/``` (hos meg: ```/Applications/wordpress-4.9.4-1/apps```) 
   3. Klon GitHub-repo hit. (```git clone https://github.com/olaven/PRO101-eksamen.git ```)
   4. Flytt alt i ```wordpress/htdocs``` __unntatt wp-content__ til ```wordpress/PRO101-eksamen```
