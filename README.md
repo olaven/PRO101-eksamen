@@ -1,22 +1,6 @@
 # Eksamen - PRO101
 
-EKsamensprosjektet skal startes på i løpet av mai.
-
-## Om wordpress-installasjon 
-* Si ifra så fort som mulig om noe i guiden er feil! Blir rot på hele prosjektet.. -@olaven
-* Alle bruker sin egen, lokale installasjon av Wordpress/Bitnami. 
-* Kun mappen ```apps/apps/wordpress/htdocs/wp-content``` skal deles
-Prosessen for å få dette til å fungere er litt kronglete, men here we go: 
-  1. Ta en midlertidig backup av ```apps/apps/wordpress/htdocs``` (Det gjorde ikke jeg, erfaring snakker) 
-  2. Åpne terminalen og ```cd``` til ```apps/apps/wordpress/``` (hos meg: ```/Applications/wordpress-4.9.4-1/apps```) 
-  3. Klon GitHub-repo hit. (```git clone https://github.com/olaven/PRO101-eksamen.git ```)
-  4. Flytt alt i ```wordpress/htdocs``` __unntatt wp-content__ til ```wordpress/PRO101-eksamen```
-  5. Slett ```wordpress/htdocs```
-  6. Endre navn på GitHub-repo til 'htdocs'. (```mv PRO101-eksamen htdocs```)
- * Filen .gitignore skal være konfigurert slik at det eneste som pushes fra Wordpress til GitHub er wp-content og index.php.
- * Sjekk at 
-  1. Din lokale wordpress-installasjon fungerer
-  2. Det eneste som registreres av git er 'wp-content' og 'index.php'. (```git status```) 
+Eksamensprosjektet skal startes på i løpet av mai.
 
 ## Nødvendige linker
 
