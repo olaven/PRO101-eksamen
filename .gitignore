@@ -1,15 +1,19 @@
-# Exclude these files from the git repo
-wp-content/backup/*
-wp-content/cache/*
-wp-content/upgrade/*
-wp-content/uploads/*
-sitemap.*
+license.txt
+php_testing.php
+readme.html
+wp-activate.php
+wp-admin/
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-cron.php
+wp-includes/
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
 wp-config.php
-
-# Hidden system files
-*.DS_Store
-*[Tt]humbs.db
-*.Trashes
-
-# Include these files in previously blocked directories
-!wp-content/uploads/.htaccess
