@@ -1,1 +1,0 @@
-timely.require(["scripts/ticketing"],function(){});

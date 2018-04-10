@@ -1,6 +1,0 @@
-#!/bin/sh
-
-. /Applications/wordpress-4.9.4-1/scripts/setenv.sh
-SASL_PATH="/Applications/wordpress-4.9.4-1/common/lib/sasl2"
-                export SASL_PATH
-exec /Applications/wordpress-4.9.4-1/common/sbin/.saslpasswd2.bin -f "/Applications/wordpress-4.9.4-1/common/etc/sasldb2" "$@"

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-. /Applications/wordpress-4.9.4-1/scripts/setenv.sh
-
-exec /Applications/wordpress-4.9.4-1/common/bin/.mlogc.bin  "$@"

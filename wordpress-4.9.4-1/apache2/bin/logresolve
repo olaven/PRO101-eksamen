@@ -1,3 +1,0 @@
-#!/bin/sh
-. /Applications/wordpress-4.9.4-1/apache2/bin/envvars
-exec /Applications/wordpress-4.9.4-1/apache2/bin/logresolve.bin "$@"
