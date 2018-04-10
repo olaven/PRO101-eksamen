@@ -1,1 +1,1 @@
-<?php bloginfo('header-oppdateringer') ?>
+<h1>I am post viewer</h1>
