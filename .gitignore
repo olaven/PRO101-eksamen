@@ -17,3 +17,4 @@ wp-signup.php
 wp-trackback.php
 xmlrpc.php
 wp-config.php
+wp-content/.DS_Store
