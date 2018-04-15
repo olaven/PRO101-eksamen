@@ -15,15 +15,28 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 }
 
 body{
+    margin: 0; 
+
     font-family: Arial, sans-serif; /*def. i manual*/
     background-color: var(--skiferblå); 
     color: var(--fiolett); 
 }
 
+/*Header*/
+.header{
+    
+}
+/*END, Header*/
+
 /*Footer*/
 .footer{
+    position: absolute; 
     height: 5%;
-    widows: 100%;
-    background-color: var(--skiferblå); 
+    width: 100%;
+    padding-bottom: 2vh; 
+    bottom: 0;    
+
+    background-color: var(--fiolett); 
+    color: var(--skiferblå); 
 }
 /*END, Footer*/

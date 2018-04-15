@@ -1,10 +1,6 @@
 
 <html>
     <head>
-        <!--KUN I UTVIKLINGSFASE-->
-        <meta http-equiv='cache-control' content='no-cache'>
-        <meta http-equiv='expires' content='0'>
-        <meta http-equiv='pragma' content='no-cache'>
         <!--Definerer at dette er head i wordpress-->
         <?php wp_head(); ?>
     </head>
