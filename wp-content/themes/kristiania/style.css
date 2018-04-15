@@ -19,3 +19,11 @@ body{
     background-color: var(--skiferblå); 
     color: var(--fiolett); 
 }
+
+/*Footer*/
+.footer{
+    height: 5%;
+    widows: 100%;
+    background-color: var(--skiferblå); 
+}
+/*END, Footer*/

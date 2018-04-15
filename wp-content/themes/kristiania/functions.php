@@ -1,9 +1,9 @@
 <?php
-//registerer Det som er i widget area
+//registerer en widgetarea til wordpress backend
 if ( function_exists('register_sidebar') )
     register_sidebar(
         array(
-            'name' => 'widget-area',
+            'name' => 'map-widget-area',
             'before_widget' => '<div class = "widgetizedArea">',
             'after_widget' => '</div>',
             'before_title' => '<h3>',
