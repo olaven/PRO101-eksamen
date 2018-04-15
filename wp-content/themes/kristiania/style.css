@@ -24,7 +24,8 @@ body{
 
 /*Header*/
 .header{
-    
+    background-color: var(--burgunder); 
+    color: var(--turkis); 
 }
 /*END, Header*/
 
