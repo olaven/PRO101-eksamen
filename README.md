@@ -5,7 +5,8 @@ Eksamensprosjektet skal startes på i løpet av mai.
 ## Guider
 
 * [Vår kombinering av Github og Wordpress](https://github.com/olaven/PRO101-eksamen/wiki/Guide:-Kombinere-Wordpress-og-Github)
-* [Wordpress-themes Getting Started](https://developer.wordpress.org/themes/getting-started/who-should-read-this-handbook/)
+* [Wordpress-themes offisiell guide](https://developer.wordpress.org/themes/getting-started/who-should-read-this-handbook/)
+* [Wordpress-themes, serie på youtube](https://www.youtube.com/playlist?list=PLpcSpRrAaOaqMA4RdhSnnNcaqOVpX7qi5)
 
 ### Møter og agendaer
 
