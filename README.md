@@ -3,7 +3,7 @@
 Eksamensprosjektet skal startes på i løpet av mai.
 
 ## Guider
-* [Installasjon av Wordpress to web server](https://github.com/olaven/PRO101-eksamen/wiki/How-to-Wordpress)
+* [Installasjon av Wordpress til web server](https://github.com/olaven/PRO101-eksamen/wiki/How-to-Wordpress)
 * [Vår kombinering av Github og Wordpress](https://github.com/olaven/PRO101-eksamen/wiki/Guide:-Kombinere-Wordpress-og-Github)
 * [Wordpress-themes offisiell guide](https://developer.wordpress.org/themes/getting-started/who-should-read-this-handbook/)
 * [Wordpress-themes, serie på youtube](https://www.youtube.com/playlist?list=PLpcSpRrAaOaqMA4RdhSnnNcaqOVpX7qi5)
