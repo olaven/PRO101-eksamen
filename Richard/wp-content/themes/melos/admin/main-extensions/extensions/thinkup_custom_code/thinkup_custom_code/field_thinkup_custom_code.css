@@ -1,0 +1,681 @@
+/*
+0. General Styling
+1. Field Styling
+2. Width Changes
+*/
+
+/* ----------------------------------------------------------------------------------------------------------
+	0. GENERAL STYLING
+---------------------------------------------------------------------------------------------------------- */
+
+/* Fix issue where bottom of section doesn't always show - General */
+#customize-controls .accordion-section-content {
+	padding-bottom: 50px;
+	background: #FCFCFC;
+}
+#customize-controls .redux-main .customize-control:last-child {
+	padding-bottom: 75px !important;
+}
+
+/* Fix issue where bottom of section doesn't always show - Homepage CTA */
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_introactionlink1 {
+	margin-bottom: 50px !important;
+}
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_introactionpage1,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_introactioncustom1 {
+	margin-top: -50px;
+	padding-bottom: 50px;
+}
+
+/* Tidy update documentation section */
+#customize-controls #accordion-section-thinkup_theme_documentation > h3 {
+/*	border-bottom: none !important; */
+}
+#customize-controls #accordion-section-thinkup_theme_documentation > h3:before {
+	content: '\f114';
+	font-family: fontawesome;
+	padding-right: 5px;
+}
+#customize-controls .redux-main #thinkup_redux_variables-thinkup_theme_documentation_button {
+	padding-bottom: 0 !important;
+}
+
+/* Hide "Theme Options" submenu tab from showing */
+#customize-controls #accordion-panel-thinkup_theme_options {
+	display: block !important;
+}
+#customize-controls #accordion-panel-thinkup_theme_options > h3:before {
+	content: '\f0ad';
+	font-family: fontawesome;
+	padding-right: 5px;
+}
+#customize-controls #accordion-panel-thinkup_theme_options #accordion-section-thinkup_theme_options {
+	display: none !important;
+}
+
+/* Change tab hover color */
+.admin-color-fresh #customize-theme-controls .control-section.control-section-redux:hover > h3.accordion-section-title,
+.admin-color-fresh #customize-theme-controls .control-section.control-section-redux h3.accordion-section-title:hover,
+.admin-color-fresh #customize-theme-controls .control-section.control-section-redux.open h3.accordion-section-title,
+.admin-color-fresh #customize-theme-controls .control-section.control-section-redux h3.accordion-section-title:focus,
+.admin-color-fresh #customize-theme-controls .control-panel.control-panel-redux:hover > h3.accordion-section-title,
+.admin-color-fresh #customize-theme-controls .control-panel.control-panel-redux h3.accordion-section-title:hover,
+.admin-color-fresh #customize-theme-controls .control-panel.control-panel-redux.open h3.accordion-section-title,
+.admin-color-fresh #customize-theme-controls .control-panel.control-panel-redux h3.accordion-section-title:focus {
+	color: #23282d !important;
+	background: #f5f5f5 !important;
+}
+.admin-color-fresh #customize-theme-controls .control-section.control-section-redux:hover > h3.accordion-section-title:after,
+.admin-color-fresh #customize-theme-controls .control-section.control-section-redux h3.accordion-section-title:hover:after,
+.admin-color-fresh #customize-theme-controls .control-section.control-section-redux.open h3.accordion-section-title:after,
+.admin-color-fresh #customize-theme-controls .control-section.control-section-redux h3.accordion-section-title:focus:after,
+.admin-color-fresh #customize-theme-controls .control-panel.control-panel-redux:hover > h3.accordion-section-title:after,
+.admin-color-fresh #customize-theme-controls .control-panel.control-panel-redux h3.accordion-section-title:hover:after,
+.admin-color-fresh #customize-theme-controls .control-panel.control-panel-redux.open h3.accordion-section-title:after,
+.admin-color-fresh #customize-theme-controls .control-panel.control-panel-redux h3.accordion-section-title:focus:after {
+	color: #23282d !important;	
+}
+
+/* Change "Save & Publish" button color to be grey */
+.wp-core-ui #customize-header-actions .button-primary {
+    color: #555 !important;
+	text-shadow: none !important;
+    border-color: #ccc !important;
+    background: #f7f7f7 !important;
+    -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08) !important;
+    box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08) !important;
+    vertical-align: top !important;	
+}
+.wp-core-ui #customize-header-actions .button-primary.focus,
+.wp-core-ui #customize-header-actions .button-primary.hover,
+.wp-core-ui #customize-header-actions .button-primary:focus,
+.wp-core-ui #customize-header-actions .button-primary:hover {
+    background: #fafafa !important;
+    border-color: #999 !important;
+    color: #23282d !important;
+}
+.wp-core-ui #customize-header-actions .button-primary.active,
+.wp-core-ui #customize-header-actions .button-primary.active:focus,
+.wp-core-ui #customize-header-actions .button-primary.active:hover,
+.wp-core-ui #customize-header-actions .button-primary:active {
+    background: #eee !important;
+    border-color: #999 !important;
+    color: #32373c !important;
+    -webkit-box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5) !important;
+    box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5) !important;
+}
+.wp-core-ui #customize-header-actions .button-primary-disabled,
+.wp-core-ui #customize-header-actions .button-primary.disabled,
+.wp-core-ui #customize-header-actions .button-primary:disabled,
+.wp-core-ui #customize-header-actions .button-primary[disabled] {
+    opacity: 0.6;
+    color: #555 !important;
+    border-color: #ccc !important;
+    background: #f7f7f7 !important;
+    -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08) !important;
+    box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08) !important;
+    vertical-align: top !important;	
+}
+
+/* Change color scheme of titles / sections in theme options */
+.customize-section-description,
+.customize-control-redux-thinkup_section .description {
+    padding: 15px 10px;
+    line-height: 1.5em;
+    font-size: 12px;
+    background-color: #EFF9FF;
+    border: 1px solid #D6F0FF;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+}
+.customize-control-redux-thinkup_section {
+	padding: 0 !important;
+	border: none !important;
+}
+.customize-control-redux-thinkup_section .redux_field_th {
+	padding: 0 !important;
+	margin-top: 22px !important;
+}
+.customize-control-redux-thinkup_section .description {
+	margin: 0 !important;
+}
+.customize-control-redux-thinkup_section .redux-title {
+	color: #777 !important;
+	font-size: 14px !important;
+	font-weight: bold !important;
+}
+.customize-control-redux-thinkup_section .redux-main .redux-field-container {
+	padding; 5px 0;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	1. FIELD STYLING
+---------------------------------------------------------------------------------------------------------- */
+
+/* Show bottom of Custom Background section (WordPress core setting) */
+#customize-control-background_attachment {
+	margin-bottom: 50px;
+}
+
+/* Hide default descriptions */
+.redux-container .showDefaults {
+	display: none;
+}
+
+.redux-group-tab-link-a span.group_title {
+	padding-left: 40px !important;
+}
+.redux-title {
+	color: #777;
+	font-size: 14px;
+	font-weight: bold;
+}
+#redux-main input {
+	border-color: #ccc !important;
+}
+.redux-container .wp-editor-container input[type="button"]:hover {
+	cursor: pointer
+}
+.redux-group-tab .redux-section-desc,
+.redux-help.redux-info-field {
+	padding: 15px 10px;
+	line-height: 1.5em;
+	font-size: 12px;
+	background-color: #EFF9FF;
+	border: 1px solid #D6F0FF;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+.redux-group-tab .redux-section-desc h3,
+.redux-help.redux-info-field .redux-info-desc {
+	line-height: 1.5;
+	margin: 0;
+	border: none;
+}
+.redux-container p.help, 
+.redux-container p.description, 
+.redux-container span.description, 
+.redux-container .form-wrap p,
+.redux-container .form-table td {
+	font-size: 11px;
+}
+.redux-group-tab .form-table tr th {
+	min-width: 255px;
+	padding-right: 40px;
+}
+
+.redux-container .form-table th,
+.redux-container .form-table td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.redux-container .redux-info-field {
+	margin: 0;
+}
+.redux-container .redux-image-select {
+	padding-top: 5px;
+	padding-bottom: 0;
+}
+.redux-container .redux-radio-container ul,
+.redux-container .redux-checkbox-container ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Field - Checkbox */
+.redux-container .redux-container-checkbox,
+#customize-controls .redux-container-checkbox {
+	display: table;
+	width: 100%;
+}
+.redux-container .redux-container-checkbox > ul,
+.redux-container .redux-container-checkbox > div,
+#customize-controls .redux-container-checkbox > ul,
+#customize-controls .redux-container-checkbox > div {
+	display: table-cell;
+	vertical-align: middle;
+}
+.redux-container .redux-container-checkbox > ul label,
+#customize-controls .redux-container-checkbox > ul label {
+	margin: 0 10px 0px 0 !important
+}
+
+/* Field - Multi Checkbox */
+.redux-container .redux-container-checkbox > ul label input,
+#customize-controls .redux-container-checkbox > ul label input {
+	margin: 2px 10px 2px 0 !important;
+}
+
+/* Field - Select - Font Awesome Icons */
+.redux-container i[class*="fa-"],
+#customize-controls i[class*="fa-"],
+.elusive i[class*="fa-"] {
+    font-family: fontawesome;
+    font-style: normal;
+}
+	
+/* Field - Slides */
+.redux-container [class*="redux-container-thinkup_slider_"],
+#customize-controls [class*="redux-container-thinkup_slider_"] {
+	width:100%;
+	max-width: 410px;
+}
+.redux-container [class*="redux-container-thinkup_slider_"] .redux-slides-list input,
+.redux-container [class*="redux-container-thinkup_slider_"] .redux-slides-list textarea,
+#customize-controls [class*="redux-container-thinkup_slider_"] ul[class*="redux-thinkup_slider_"] input,
+#customize-controls [class*="redux-container-thinkup_slider_"] ul[class*="redux-thinkup_slider_"] textarea {
+	width:100%;
+	max-width: 330px;
+	margin: 0 0 5px 0;
+}
+.redux-container [class*="redux-container-thinkup_slider_"] .button-primary,
+#customize-controls [class*="redux-container-thinkup_slider_"] .button-primary {
+	margin-right: 0;
+}
+.redux-container [class*="redux-container-thinkup_slider_"] .deletion,
+#customize-controls [class*="redux-container-thinkup_slider_"] .deletion {
+	margin-right: 6px;
+}
+.redux-container [class*="redux-thinkup_slider_"]  .screenshot img,
+#customize-controls [class*="redux-thinkup_slider_"]  .screenshot img {
+    max-height: 340px;
+    padding: 5px;
+    border: 1px solid #e3e3e3;
+    background: #f7f7f7;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px
+}
+
+/* Background Image */
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxbackgroundimage,
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxedposition,
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxedposition,
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxedrepeat,
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxedsize,
+#customize-controls li#thinkup_redux_variables-thinkup_general_boxbackgroundimage,
+#customize-controls li#thinkup_redux_variables-thinkup_general_boxedposition,
+#customize-controls li#thinkup_redux_variables-thinkup_general_boxedposition,
+#customize-controls li#thinkup_redux_variables-thinkup_general_boxedrepeat,
+#customize-controls li#thinkup_redux_variables-thinkup_general_boxedsize {
+	border-bottom: none;
+}
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxbackgroundimage th,
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxbackgroundimage td,
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxedposition th,
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxedposition td,
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxedposition th,
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxedposition td,
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxedrepeat th,
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxedrepeat td,
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxedsize th,
+.redux-container #section-thinkup_redux_variables-thinkup_general_boxedsize td {
+	padding-bottom: 0;
+}
+
+/* Homepage - Slider */
+.redux-slides-accordion-group h3 {
+	position: relative;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.4em;
+}
+.ui-accordion .ui-accordion-content input {
+	max-width: 100%
+}
+.ui-accordion .ui-accordion-header .ui-icon {
+	position: absolute;
+	left: .5em;
+	top: 50%;
+	margin-top: -8px;
+	width: 16px;
+	height: 16px
+}
+
+/* Homepage Pre-Designed Content */
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_icon,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_image,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_imagesize,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_title,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_desc,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_link,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_url,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_button,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_icon,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_image,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_imagesize,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_title,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_desc,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_link,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_url,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_button,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_icon,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_image,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_imagesize,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_title,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_desc,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_link,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_url,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_button,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_icon,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_image,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_imagesize,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_title,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_desc,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_link,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_url,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_button,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section1_icon,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section1_image,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section1_imagesize,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section1_title,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section1_desc,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section1_link,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section1_url,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section1_button,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section2_icon,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section2_image,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section2_imagesize,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section2_title,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section2_desc,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section2_link,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section2_url,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section2_button,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section3_icon,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section3_image,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section3_imagesize,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section3_title,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section3_desc,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section3_link,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section3_url,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section3_button,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section4_icon,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section4_image,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section4_imagesize,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section4_title,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section4_desc,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section4_link,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section4_url,
+#customize-controls li#thinkup_redux_variables-thinkup_homepage_section4_button {
+	border-bottom: none;
+}
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_icon fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_image fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_imagesize fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_title fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_desc fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_link fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_url fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section1_button fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_icon fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_image fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_imagesize fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_title fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_desc fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_link fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_url fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section2_button fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_icon fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_image fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_imagesize fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_title fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_desc fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_link fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_url fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section3_button fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_icon fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_image fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_imagesize fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_title fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_desc fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_link fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_url fieldset,
+.redux-container #section-thinkup_redux_variables-thinkup_homepage_section4_button fieldset {
+	padding-bottom: 0 !important;
+}
+.redux-container [id*="section-thinkup_redux_variables-thinkup_homepage_section"] textarea,
+.redux-container [id*="section-thinkup_redux_variables-thinkup_homepage_section"] input,
+.redux-container [id*="section-thinkup_redux_variables-thinkup_homepage_section"] .redux-select-item,
+#customize-controls li[id*="thinkup_redux_variables-thinkup_homepage_section"] textarea,
+#customize-controls li[id*="thinkup_redux_variables-thinkup_homepage_section"] input,
+#customize-controls li[id*="thinkup_redux_variables-thinkup_homepage_section"] .redux-select-item {
+	width: 100% !important;
+	max-width: 340px !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.redux-container [id*="section-thinkup_redux_variables-thinkup_homepage_section"] input[type=checkbox],
+#customize-controls li[id*="thinkup_redux_variables-thinkup_homepage_section"] input[type=checkbox] {
+	width: auto !important;
+}
+.redux-container [id*="section-thinkup_redux_variables-thinkup_homepage_section"] textarea,
+#customize-controls li[id*="thinkup_redux_variables-thinkup_homepage_section"] textarea {
+	height: 85px;
+}
+
+/* Social Media */
+.redux-container #section-thinkup_redux_variables-thinkup_header_facebooklink,
+.redux-container #section-thinkup_redux_variables-thinkup_header_facebookiconswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_header_twitterlink,
+.redux-container #section-thinkup_redux_variables-thinkup_header_twittericonswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_header_googlelink,
+.redux-container #section-thinkup_redux_variables-thinkup_header_googleiconswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_header_linkedinlink,
+.redux-container #section-thinkup_redux_variables-thinkup_header_linkediniconswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_header_flickrlink,
+.redux-container #section-thinkup_redux_variables-thinkup_header_flickriconswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_header_pinterestlink,
+.redux-container #section-thinkup_redux_variables-thinkup_header_pinteresticonswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_header_youtubelink,
+.redux-container #section-thinkup_redux_variables-thinkup_header_youtubeiconswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_header_rsslink,
+.redux-container #section-thinkup_redux_variables-thinkup_header_rssiconswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_header_facebooklink,
+#customize-controls li#thinkup_redux_variables-thinkup_header_facebookiconswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_header_twitterlink,
+#customize-controls li#thinkup_redux_variables-thinkup_header_twittericonswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_header_googlelink,
+#customize-controls li#thinkup_redux_variables-thinkup_header_googleiconswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_header_linkedinlink,
+#customize-controls li#thinkup_redux_variables-thinkup_header_linkediniconswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_header_flickrlink,
+#customize-controls li#thinkup_redux_variables-thinkup_header_flickriconswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_header_pinterestlink,
+#customize-controls li#thinkup_redux_variables-thinkup_header_pinteresticonswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_header_youtubelink,
+#customize-controls li#thinkup_redux_variables-thinkup_header_youtubeiconswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_header_rsslink,
+#customize-controls li#thinkup_redux_variables-thinkup_header_rssiconswitch {
+	border:none;
+}
+.redux-container #section-thinkup_redux_variables-thinkup_header_facebookiconswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_header_facebookiconswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_header_twittericonswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_header_twittericonswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_header_googleiconswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_header_googleiconswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_header_linkediniconswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_header_linkediniconswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_header_flickriconswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_header_flickriconswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_header_pinteresticonswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_header_pinteresticonswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_header_youtubeiconswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_header_youtubeiconswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_header_rssiconswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_header_rssiconswitch td {
+	padding-bottom: 0;
+}
+
+/* Portfolio */
+.redux-container #section-thinkup_redux_variables-thinkup_portfolio_layout .redux-image-select,
+#customize-controls li#thinkup_redux_variables-thinkup_portfolio_layout .redux-image-select {
+	max-width: 250px;
+}
+
+/* Notification Bar */
+.redux-container #section-thinkup_redux_variables-thinkup_notification_backgroundcolourswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_notification_maintextcolourswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_notification_buttoncolourswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_notification_buttontextcolourswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_notification_backgroundcolourswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_notification_maintextcolourswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_notification_buttoncolourswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_notification_buttontextcolourswitch {
+	border: none;
+}
+.redux-container #section-thinkup_redux_variables-thinkup_notification_backgroundcolourswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_notification_backgroundcolourswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_notification_maintextcolourswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_notification_maintextcolourswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_notification_buttoncolourswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_notification_buttoncolourswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_notification_buttontextcolourswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_notification_buttontextcolourswitch td {
+	padding-bottom: 0;
+}
+
+/* Special Pages */
+.redux-container #section-thinkup_redux_variables-thinkup_404_content,
+#customize-controls li#thinkup_redux_variables-thinkup_404_content {
+	border-bottom: none;
+}
+.redux-container #section-thinkup_redux_variables-thinkup_404_content th,
+.redux-container #section-thinkup_redux_variables-thinkup_404_content td {
+	padding-bottom: 0;
+}
+.redux-container #section-thinkup_redux_variables-thinkup_404_content textarea,
+#customize-controls li#thinkup_redux_variables-thinkup_404_content textarea {
+	height: 180px;
+}
+
+/* SEO noodp and noydir message */
+.redux-container #seo-information {
+	font-weight: normal;
+}
+
+/* Typography */
+.redux-container #section-thinkup_redux_variables-thinkup_font_bodyswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_font_bodyheadingswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_font_preheaderswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_font_mainheaderswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_font_footerheadingswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_font_mainfooterswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_font_postfooterswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_font_slidertitleswitch,
+.redux-container #section-thinkup_redux_variables-thinkup_font_slidertextswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_font_bodyswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_font_bodyheadingswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_font_preheaderswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_font_mainheaderswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_font_footerheadingswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_font_mainfooterswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_font_postfooterswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_font_slidertitleswitch,
+#customize-controls li#thinkup_redux_variables-thinkup_font_slidertextswitch {
+	border: none;
+}
+.redux-container #section-thinkup_redux_variables-thinkup_font_bodyswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_font_bodyswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_font_bodyheadingswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_font_bodyheadingswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_font_preheaderswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_font_preheaderswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_font_mainheaderswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_font_mainheaderswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_font_footerheadingswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_font_footerheadingswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_font_mainfooterswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_font_mainfooterswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_font_postfooterswitch th ,
+.redux-container #section-thinkup_redux_variables-thinkup_font_postfooterswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_font_slidertitleswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_font_slidertitleswitch td,
+.redux-container #section-thinkup_redux_variables-thinkup_font_slidertextswitch th,
+.redux-container #section-thinkup_redux_variables-thinkup_font_slidertextswitch td {
+	padding-bottom: 0;
+}
+
+/* WooCommerce */
+.redux-container #section-thinkup_redux_variables-thinkup_woocommerce_layout .redux-image-select,
+#customize-controls li#thinkup_redux_variables-thinkupwoocommerce_layout .redux-image-select {
+	max-width: 250px;
+}
+
+/* Tidy Google Fonts list */
+#redux-main #14_section_group.redux-group-tab [id*="standard"],
+#redux-main #14_section_group.redux-group-tab [id*="google"] {
+	border-bottom: none;
+}
+#redux-main #14_section_group.redux-group-tab [id*="standard"] th,
+#redux-main #14_section_group.redux-group-tab [id*="google"] th,
+#redux-main #14_section_group.redux-group-tab [id*="standard"] td,
+#redux-main #14_section_group.redux-group-tab [id*="google"] td {
+	padding-bottom: 0;
+}
+#redux-main #14_section_group.redux-group-tab [id*="custom"] input {
+	max-width: 243px;
+}
+
+/* Hide shortcode button in Redux */
+.redux-container #cldra_thinkupshortcodes-engine-shortcodeinsert,
+#customize-controls #cldra_thinkupshortcodes-engine-shortcodeinsert {
+	display: none;
+}
+
+/* Image select alignment */
+.redux-container .redux-image-select,
+#customize-controls .redux-image-select {
+	text-align: left;
+}
+
+
+/*---------------------------------------------------- 
+	FIX REDUX IMAGE ISSUE - MEDIA UPLOADER
+---------------------------------------------------- */
+
+.redux-slides-image {
+	max-height: 340px;
+	max-width: 340px;
+	padding: 5px;
+	margin-top: 10px;
+	border: 1px solid #E3E3E3;
+	background: #F7F7F7;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------
+	1. WIDTH CHANGES
+---------------------------------------------------------------------------------------------------------- */
+
+/* Change sidebar width - Theme Options */
+#customize-controls.thinkup-width-450 {
+	width: 450px !important;
+	max-width: 450px !important;
+}
+#customize-preview.thinkup-width-450 {
+	left: 150px !important;
+}
+
+/* ThinkUpThemes show / hide field classes - For use in Customizer */
+#customize-controls .thinkup-hide {
+	display: none !important;
+}
+#customize-controls .thinkup-show {
+	display: block !important;
+}

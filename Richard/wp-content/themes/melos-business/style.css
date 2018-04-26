@@ -1,0 +1,255 @@
+/*
+Theme Name: Melos Business
+Theme URI: http://www.thinkupthemes.com/free/melos/
+Author: Think Up Themes
+Author URI: http://www.thinkupthemes.com
+Description: Melos Business is the free version of the multi-purpose professional theme (Melos Pro) ideal for a business or blog website. The theme has a responsive layout, HD retina ready and comes with a powerful theme options panel with can be used to make awesome changes without touching any code. The theme also comes with a full width easy to use slider. Easily add a logo to your site and create a beautiful homepage using the built-in homepage layout.
+Template: melos
+Version: 1.0.3
+License: GNU General Public License
+License URI: /licenses/license.txt
+Tags: black, dark, orange, red, blue, one-column, two-columns, three-columns, right-sidebar, left-sidebar, fixed-layout, responsive-layout, fluid-layout, custom-header, custom-menu, full-width-template, theme-options, threaded-comments, featured-images, post-formats, sticky-post, translation-ready, flexible-header, gray, light, white, custom-background, grid-layout, footer-widgets, blog, e-commerce, education, entertainment, news, photography, portfolio
+Text Domain: melos-business
+*/
+
+/* Services */
+.services-builder.style1 {
+	text-align: center;
+	border-bottom: 3px solid #E2E2E2;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+.services-builder.style1 .iconmain .iconurl {
+	margin-top: -5px;
+}
+.services-builder.style1 .iconmain .iconurl a {
+	display: inline-block;
+	color: #1EAAF1;
+	background: none;
+	padding: 0;
+	margin-bottom: 5px;
+}
+.services-builder.style1 .iconmain .iconurl a:hover {
+	color: #333;
+}
+
+/* Pre Header */
+
+/* Header */
+
+/* Intro */
+#intro #intro-core {
+	position: relative;
+	text-align: left;
+}
+#intro .page-title,
+#intro #breadcrumbs {
+	display: inline-block;
+}
+#intro .page-title {
+	padding: 0;
+	margin-left: 20px;
+}
+#intro .page-title:after {
+	bottom: -1px;
+	left: -20px;
+	right: auto;
+	height: 100%;
+	width: 0;
+	border-left: 3px solid #1EAAF1;
+}
+#intro #breadcrumbs {
+	position: absolute;
+	right: 0;
+	top: 30%;
+}
+
+/* Blog */
+.blog-thumb .image-overlay {
+	display: none;	
+}
+.blog-style1-layout1 .blog-article .entry-meta {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    border-bottom: 1px solid #E2E2E2;
+	-webkit-box-shadow: 25px -1px 0px 0px #fff, -25px -1px 0px 0px #fff, 25px 0px 0px 0px #E2E2E2, -25px 0px 0px 0px #E2E2E2;
+	-moz-box-shadow: 25px -1px 0px 0px #fff, -25px -1px 0px 0px #fff, 25px 0px 0px 0px #E2E2E2, -25px 0px 0px 0px #E2E2E2;
+	-ms-box-shadow: 25px -1px 0px 0px #fff, -25px -1px 0px 0px #fff, 25px 0px 0px 0px #E2E2E2, -25px 0px 0px 0px #E2E2E2;
+	-o-box-shadow: 25px -1px 0px 0px #fff, -25px -1px 0px 0px #fff, 25px 0px 0px 0px #E2E2E2, -25px 0px 0px 0px #E2E2E2;
+	box-shadow: 25px -1px 0px 0px #fff, -25px -1px 0px 0px #fff, 25px 0px 0px 0px #E2E2E2, -25px 0px 0px 0px #E2E2E2;
+}
+
+/* Post Navigation */
+.nav-previous a,
+.nav-next a {
+	color: #fff;
+	background: #1EAAF1;
+}
+.nav-previous a:hover,
+.nav-next a:hover {
+	color: #fff;
+	background: #333;
+}
+
+/* Social Sharing */
+#sharepost {
+	padding: 15px 20px;
+}
+#shareicons a,
+#shareicons i {
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+#shareicons a {
+	margin-right: 7px;
+	background: #d2d2d2;
+}
+#shareicons a:hover {
+	opacity: 0.8 !important;
+}
+#shareicons a.facebook {
+    background: #3b5997;
+}
+#shareicons a.twitter {
+	background: #a5dee8;
+}
+#shareicons a.google-plus {
+	background: #db4a39;
+}
+#shareicons a.instagram {
+	background: #AC8263;
+}
+#shareicons a.tumblr {
+	background: #395672;
+}
+#shareicons a.linkedin {
+	background: #56a1c4;
+}
+#shareicons a.flickr {
+	background: #c5c5c5;
+}
+#shareicons a.pinterest {
+	background: #C92228;
+}
+#shareicons a.xing {
+	background: #126567;
+}
+#shareicons a.paypal {
+	background: #1e477a;
+}
+#shareicons a.youtube {
+	background: #de1f26;
+}
+#shareicons a.vimeo-square {
+	background: #4EBBFF;
+}
+#shareicons a.rss {
+	background: #fea81d;
+}
+
+/* Posts & Pages */
+
+/* Pagination */
+.pag {
+	text-align: left;
+	background: none;
+}
+.pag li a,
+.pag li span {
+	border: none;
+	margin-left: 3px;
+}
+.pag li:first-child a,
+.pag li:first-child span {
+	margin-left: 0;
+}
+.pag li a {
+	background: #fff;
+}
+
+/* Sidebars */
+#sidebar .widget {
+	border-bottom: 3px solid #E2E2E2
+}
+#sidebar h3.widget-title {
+	text-transform: none;
+}
+
+/* Default Widget - Tag Cloud */
+.widget_tag_cloud a {
+	font-size: 12px !important;
+	color: inherit;
+	background: none;
+	border: 1px solid #e2e2e2;
+	padding: 3px 8px !important;
+	margin: 3px 1px !important;
+	border-radius: 0;
+}
+.widget_tag_cloud a:hover {
+	background: none;
+	border-color: #1EAAF1;
+}
+#footer .widget_tag_cloud a {
+	font-size: 13px !important;
+	color: #fff;
+	background: none;
+	border: 1px solid #ddd;
+}
+#footer .widget_tag_cloud a:hover {
+	color: #fff;
+	background: #1EAAF1;
+	border-color: #1EAAF1;
+}
+
+/* Footer */
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+
+	/* Intro */
+	#intro #intro-core {
+		text-align: center;
+		margin: 0 !important;
+	}
+	#intro .page-title,
+	#intro #breadcrumbs {
+		display: block;
+	}
+	#intro .page-title {
+		margin-left: 0;
+	}
+	#intro .page-title:after {
+		display: none;
+	}
+	#intro #breadcrumbs {
+		position: relative;
+		margin-bottom: 15px;
+	}
+	#intro #breadcrumbs:after {
+		content: "";
+		margin: auto;
+		bottom: -10px;
+		left: 0;
+		right: 0;
+		width: 100px;
+		position: absolute;
+		border-left: none !important;
+		border-bottom: 1px solid #1EAAF1;
+	}
+}
