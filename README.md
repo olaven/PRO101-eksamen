@@ -14,8 +14,7 @@ Eksamensprosjektet skal startes på i løpet av mai.
 
 ### Undersøkelser
 
-* [Spørreundersøkelsen 1](https://docs.google.com/forms/d/15b7D72Gg4rgdub0f1uqU4CA9Ao_-V0SKcULedAaiVB8/edit)
-* [Spørreundersøkelse 1 (med endring)](https://docs.google.com/forms/d/1UR7eo3kX0v_yvSnWNsZMbWUsGRVToseopP5vBos-1L8/edit)
+* [Spørreundersøkelse](https://docs.google.com/forms/d/1UR7eo3kX0v_yvSnWNsZMbWUsGRVToseopP5vBos-1L8/edit)
 
 ### Kommunikasjon
 
