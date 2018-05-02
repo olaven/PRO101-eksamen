@@ -17,5 +17,6 @@
     ?>
     <br/>
     <button onClick="alert('ikke implementert -@olaven')">Vis veien</button> 
+    <hr>
 </div>
 
