@@ -25,13 +25,17 @@ FLBuilder::register_module( 'ruterwidget', array(
             'section-1'  => array(
                 'title'         => __( 'Section 1', 'fl-builder' ),
                 'fields'        => array(
-                    'id'     => array(
+                    'ruter_id'     => array(
                         'type'          => 'unit',
                         'label'         => __( 'ID til ankomststed', 'fl-builder' ),
                     ), 
+                    'gatenavn' => array(
+                        'type' => 'text', 
+                        'label' => 'Gatenavn'
+                    ),
                     'navn' => array(
                         'type' => 'text', 
-                        'label' => 'Navn'
+                        'label' => 'Navn (Display)'
                     )
                 )
             )
