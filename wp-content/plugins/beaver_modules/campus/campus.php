@@ -8,8 +8,8 @@ class campus extends FLBuilderModule {
             'description'     => __( 'Vise campuser!', 'fl-builder' ),
             'group'           => __( 'My Group', 'fl-builder' ),
             'category'        => __( 'Kristiania', 'fl-builder' ),
-            'dir'             => CAMPUS_PLUGIN_DIR . 'campus/',
-            'url'             => CAMPUS_PLUGIN_URL . 'campus/',
+            'dir'             => BEAVER_PLUGIN_DIR . 'campus/',
+            'url'             => BEAVER_PLUGIN_URL . 'campus/',
             'icon'            => 'button.svg',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
