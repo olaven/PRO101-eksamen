@@ -11,6 +11,7 @@ define( 'BEAVER_PLUGIN_URL', plugins_url( '/', __FILE__ ) );
 function my_load_module_examples() {
     if ( class_exists( 'FLBuilder' ) ) {
         // Include your custom modules here.
+        require_once 'bysykkel/bysykkel.php';
         require_once 'campus/campus.php';
         require_once 'ruterwidget/ruterwidget.php';
     }
