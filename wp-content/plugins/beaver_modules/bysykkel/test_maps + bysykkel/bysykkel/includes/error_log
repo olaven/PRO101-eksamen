@@ -1,0 +1,2 @@
+[17-May-2018 14:45:52 UTC] PHP Warning:  file_get_contents(https://oslobysykkel.no/api/v1/stations): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/zahsaf17/public_html/wordpress_/wp-content/plugins/beaver_modules/bysykkel/includes/stations.php on line 16
