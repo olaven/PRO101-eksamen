@@ -11,13 +11,19 @@
         display: flex; 
         width: 100%; 
     }
-    .campus-navigation > div{
+    .campus-navigation > a{
         width: 100%; 
         border-style: solid;
     }
-    .campus-navigation > div:target{
-        transform: scale(1.1); 
+    .campus-navigation a:target{
+        background-color: purple; 
     }
+    .campus-info article{
+        position: absolute; 
+        background-color: red; 
+        /*visibility: hidden;*/ 
+    }
+    
 </style>
 <div class="campus">
     <img src="<?php echo $settings->bilde_src; ?>" />
@@ -26,11 +32,24 @@
             <?php echo $settings->navn; ?>
         </h2>
         <nav class="campus-navigation">
-            <div>Kontakt</div>
-            <div>Åpningsider</div>
-            <div>Kantine</div>
+            <a href="#campus-contact">Kontakt</a>
+            <a href="#campus-times">Åpningsider</a>
+            <a href="#campus-cantine">Kantine</a>
         </nav>
-        <?php 
+        <section class="campus-info">
+            <article id="campus-contact">
+                Kontakt
+            </article>
+            <article id="campus-times">
+                Times
+            </article>
+            <article id="campus-cantine">
+                Kantine
+            </article>
+        </section>
+    </article>
+</div>
+<?php 
             date_default_timezone_set("Europe/Oslo"); 
             $current_hour = date("G");
             $opening_hour = ($settings->apent_fra['day_period'] == "am" ? $settings->apent_fra["hours"] : ($settings->apent_fra["hours"] + 12)); 
@@ -42,6 +61,3 @@
                 echo "Åpent: NEI"; 
             }
         ?>
-    </article>
-</div>
-
