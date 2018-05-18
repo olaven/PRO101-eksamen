@@ -96,9 +96,8 @@
 
 
         google.maps.event.addDomListener(document.getElementById('posisjon'), 'click', function(evt) {
-            for (var i = 0; i < markers.length; i++) {
-                markers[i].setMap(null);
-            }
+            removeMarkers(); 
+
             markers = [];
             document.getElementById('mode').style.display = "block";
             document.getElementById('hide').style.display = "block";
@@ -160,35 +159,9 @@
         });
 
 
-        google.maps.event.addDomListener(document.getElementById('butikk'), 'click', function(evt) {
-            document.getElementById('right-panel').style.display = "none";
-            document.getElementById('mode').style.display = "none";
-            infowindow = new google.maps.InfoWindow();
-            var service = new google.maps.places.PlacesService(map);
-            directionsDisplay.setMap();
-            map.setZoom(14);
-            map.setCenter(oslo);
-            service.nearbySearch({
-                location: oslo,
-                radius: 500,
-                type: ['store']
-            }, callback)
+        addMapSearchListener('butikk', 'store'); 
+        addMapSearchListener('trening', 'gym'); 
 
-        });
-
-        google.maps.event.addDomListener(document.getElementById('trening'), 'click', function(evt) {
-
-            infowindow = new google.maps.InfoWindow();
-            var service = new google.maps.places.PlacesService(map);
-            directionsDisplay.set('directions', null);
-            map.setZoom(14);
-            map.setCenter(oslo);
-            service.nearbySearch({
-                location: oslo,
-                radius: 500,
-                type: ['gym']
-            }, callback)
-        });
 
         google.maps.event.addDomListener(document.getElementById('bike'), 'click', function(evt) {
             infowindow = new google.maps.InfoWindow();
@@ -196,10 +169,9 @@
             directionsDisplay.setMap();
             map.setZoom(14);
             map.setCenter(oslo);
+            removeMarkers();
             //Prøve å legge markers med en array, prøve å få til en JSON hvis du kan
             getBysykkelJS("stations", (response) => {
-                infowindow = new google.maps.InfoWindow();
-
                 //'1' på slutten av reponse.. aner ikke hvorfor. Fjerner. 
                 response = response.substring(0, response.length - 3); 
                 //gjør om til JS-objekt
@@ -217,11 +189,10 @@
                         position : position, 
                         animation : google.maps.Animation.DROP
                     });
-                    console.log(position); 
-
-                    marker.setMap(map); 
+                    
+                    markers.push(marker); 
                 }
-                
+                displayMarkers(); 
             })
         });
 
@@ -231,7 +202,6 @@
             var marker = new google.maps.Marker({
                 map: map,
                 position: place.geometry.location,
-                draggable: true,
                 animation: google.maps.Animation.DROP,
             });
             google.maps.event.addListener(marker, 'click', function() {
@@ -244,10 +214,7 @@
 
         function callback(results, status) {
             if (status == google.maps.places.PlacesServiceStatus.OK) {
-                for (var i = 0; i < markers.length; i++) {
-                    markers[i].setMap(null);
-                }
-                markers = [];
+                removeMarkers(); 
                 for (var i = 0; i < results.length; i++) {
                     createMarker(results[i]);
                 }
@@ -256,9 +223,48 @@
         var markerCampus = new google.maps.Marker({
             map: map,
             position: oslo,
-            draggable: true,
             animation: google.maps.Animation.DROP,
         });
+
+        /*
+        Legger til listeners på knapper som skal aktivere søking på kartet
+        */
+        function addMapSearchListener(buttonId, searchTerm){
+            google.maps.event.addDomListener(document.getElementById(buttonId), 'click', function(evt) {
+                document.getElementById('right-panel').style.display = "none";
+                document.getElementById('mode').style.display = "none";
+                infowindow = new google.maps.InfoWindow();
+                var service = new google.maps.places.PlacesService(map);
+                directionsDisplay.setMap();
+                map.setZoom(14);
+                map.setCenter(oslo);
+                service.nearbySearch({
+                    location: oslo,
+                    radius: 500,
+                    type: [searchTerm]
+                }, callback)
+            });
+        }
+
+        /*
+            Fjerner markers på kartet
+        */
+        function removeMarkers(){
+            for(let i in markers){
+                markers[i].setMap(null); 
+            }
+            //fjerner ubrukte markers 
+            markers = []; 
+        }
+
+        /*
+            Viser markers som er i markers-arrayet 
+        */
+        function displayMarkers(){
+            for(let marker of markers){
+                marker.setMap(map); 
+            }
+        }
         
     }
 
