@@ -35,7 +35,7 @@ FLBuilder::register_module( 'campus', array(
                     ), 
                     'apent_fra'     => array(
                         'type'       => 'time',
-                        'label'      => __( 'Åpningstider', 'fl-builder' ),
+                        'label'      => __( 'Åpent fra', 'fl-builder' ),
                         'default'		=>array(
                             'hours'		=> '08',
                             'minutes'	=> '00',
@@ -44,13 +44,43 @@ FLBuilder::register_module( 'campus', array(
                     ), 
                     'apent_til'     => array(
                         'type'       => 'time',
-                        'label'      => __( 'Åpningstider', 'fl-builder' ),
+                        'label'      => __( 'Åpent til', 'fl-builder' ),
                         'default'		=>array(
                             'hours'		=> '11',
                             'minutes'	=> '00',
                             'day_period'	=> 'pm'
                         )
+                    ),
+                    'apent_fra_kantine'     => array(
+                        'type'       => 'time',
+                        'label'      => __( 'Kantine, åpent fra', 'fl-builder' ),
+                        'default'		=>array(
+                            'hours'		=> '08',
+                            'minutes'	=> '00',
+                            'day_period'	=> 'am'
                     )
+                    ), 
+                    'apent_til_kantine'     => array(
+                        'type'       => 'time',
+                        'label'      => __( 'Kantine, åpent til', 'fl-builder' ),
+                        'default'		=>array(
+                            'hours'		=> '11',
+                            'minutes'	=> '00',
+                            'day_period'	=> 'pm'
+                        )
+                    ),
+                    'info_kantine'     => array(
+                        'type'          => 'text',
+                        'label'         => __( 'Info om kantine', 'fl-builder' ),
+                    ), 
+                    'kontakt_telefon'     => array(
+                        'type'          => 'text',
+                        'label'         => __( 'Telefon - kontakt', 'fl-builder' ),
+                    ), 
+                    'kontakt_epost'     => array(
+                        'type'          => 'text',
+                        'label'         => __( 'Epost - kontakt', 'fl-builder' ),
+                    ) 
                 )
             )
         )
