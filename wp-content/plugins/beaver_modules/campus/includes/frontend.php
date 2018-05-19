@@ -15,13 +15,13 @@
         width: 100%; 
         border-style: solid;
     }
-    .campus-navigation a:target{
-        background-color: purple; 
+    .campus-info article:target{
+        visibility: visible; 
     }
     .campus-info article{
         position: absolute; 
         background-color: red; 
-        /*visibility: hidden;*/ 
+        visibility: hidden;
     }
     
 </style>
