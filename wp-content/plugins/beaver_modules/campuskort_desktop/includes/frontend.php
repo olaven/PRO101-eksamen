@@ -1,4 +1,7 @@
 
+<style>
+    
+</style>
 <div class="card">
     <h2>
         <?php echo $settings->tekst ?> 
