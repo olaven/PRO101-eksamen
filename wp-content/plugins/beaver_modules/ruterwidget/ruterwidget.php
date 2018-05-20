@@ -5,7 +5,7 @@ class ruterwidget extends FLBuilderModule {
     {
         parent::__construct(array(
             'name'            => __( 'Ruterwidget', 'fl-builder' ),
-            'description'     => __( 'Ruter til valg sted, SØK ID: https://ruter.no/reiseplanlegger/#st:1,sp:0,bp:0', 'fl-builder' ),
+            'description'     => __( 'Ruter til valg sted', 'fl-builder' ),
             'group'           => __( 'My Group', 'fl-builder' ),
             'category'        => __( 'Kristiania', 'fl-builder' ),
             'dir'             => BEAVER_PLUGIN_DIR . 'ruterwidget/',
@@ -31,7 +31,8 @@ FLBuilder::register_module( 'ruterwidget', array(
                     ), 
                     'gatenavn' => array(
                         'type' => 'text', 
-                        'label' => 'Gatenavn'
+                        'label' => 'Gatenavn', 
+                        'default' => "SØK ID: https://ruter.no/reiseplanlegger/#st:1,sp:0,bp:0"
                     ),
                     'navn' => array(
                         'type' => 'text', 
