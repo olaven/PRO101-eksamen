@@ -84,10 +84,7 @@ FLBuilder::register_module( 'campus', array(
                 )
             )
         )
-    ),
-    'farger-tab'      => array(
-        'title'         => __( 'Farger', 'fl-builder' ),
-    ),
+    )
 ) );
 
 ?>

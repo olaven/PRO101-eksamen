@@ -1,15 +1,15 @@
 <?php
 
-class campuskort extends FLBuilderModule {
+class campuskort_desktop extends FLBuilderModule {
     public function __construct()
     {
         parent::__construct(array(
-            'name'            => __( 'Campuskort', 'fl-builder' ),
+            'name'            => __( 'Campuskort_desktop', 'fl-builder' ),
             'description'     => __( 'Kort for å velge et campus', 'fl-builder' ),
             'group'           => __( 'My Group', 'fl-builder' ),
             'category'        => __( 'Kristiania', 'fl-builder' ),
-            'dir'             => BEAVER_PLUGIN_DIR . 'campuskort/',
-            'url'             => BEAVER_PLUGIN_URL . 'campuskort/',
+            'dir'             => BEAVER_PLUGIN_DIR . 'campuskort_desktop/',
+            'url'             => BEAVER_PLUGIN_URL . 'campuskort_desktop/',
             'icon'            => 'button.svg',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
@@ -18,7 +18,7 @@ class campuskort extends FLBuilderModule {
     }
 }
 
-FLBuilder::register_module( 'campuskort', array(
+FLBuilder::register_module( 'campuskort_desktop', array(
     'info-tab'      => array(
         'title'         => __( 'Info', 'fl-builder' ),
         'sections'      => array(
