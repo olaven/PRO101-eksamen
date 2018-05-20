@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor editor class.
+ * Elementor editor.
  *
  * Elementor editor handler class is responsible for initializing Elementor
  * editor and register all the actions needed to display the editor.
@@ -385,12 +385,12 @@ class Editor {
 		);
 
 		wp_register_script(
-			'jquery-select2',
-			ELEMENTOR_ASSETS_URL . 'lib/select2/js/select2' . $suffix . '.js',
+			'jquery-elementor-select2',
+			ELEMENTOR_ASSETS_URL . 'lib/e-select2/js/e-select2.full' . $suffix . '.js',
 			[
 				'jquery',
 			],
-			'4.0.5',
+			'4.0.6-rc.1',
 			true
 		);
 
@@ -454,7 +454,7 @@ class Editor {
 				'tipsy',
 				'imagesloaded',
 				'heartbeat',
-				'jquery-select2',
+				'jquery-elementor-select2',
 				'flatpickr',
 				'elementor-dialog',
 				'ace',
@@ -671,8 +671,8 @@ class Editor {
 		 *
 		 * @since 1.0.0
 		 *
-		 * @param string $localized_settings Localized settings.
-		 * @param int    $post_id            The ID of the current post being edited.
+		 * @param array $localized_settings Localized settings.
+		 * @param int   $post_id            The ID of the current post being edited.
 		 */
 		$localized_settings = apply_filters( 'elementor/editor/localize_settings', $localized_settings, $this->_post_id );
 
@@ -736,17 +736,17 @@ class Editor {
 		);
 
 		wp_register_style(
-			'select2',
-			ELEMENTOR_ASSETS_URL . 'lib/select2/css/select2' . $suffix . '.css',
+			'elementor-select2',
+			ELEMENTOR_ASSETS_URL . 'lib/e-select2/css/e-select2' . $suffix . '.css',
 			[],
-			'4.0.5'
+			'4.0.6-rc.1'
 		);
 
 		wp_register_style(
 			'elementor-icons',
 			ELEMENTOR_ASSETS_URL . 'lib/eicons/css/elementor-icons' . $suffix . '.css',
 			[],
-			'3.2.1'
+			'3.3.0'
 		);
 
 		wp_register_style(
@@ -768,7 +768,7 @@ class Editor {
 			ELEMENTOR_ASSETS_URL . 'css/editor' . $direction_suffix . $suffix . '.css',
 			[
 				'font-awesome',
-				'select2',
+				'elementor-select2',
 				'elementor-icons',
 				'wp-auth-check',
 				'google-font-roboto',

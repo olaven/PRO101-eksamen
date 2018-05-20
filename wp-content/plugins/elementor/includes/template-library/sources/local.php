@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor template library local source class.
+ * Elementor template library local source.
  *
  * Elementor template library local source handler class is responsible for
  * handling local Elementor templates saved by the user locally on his site.
@@ -1068,7 +1068,7 @@ class Source_Local extends Source_Base {
 		$library_screen_id = 'edit-' . self::CPT;
 		$current_screen = get_current_screen();
 
-		if ( ! isset( $current_screen->id ) || $library_screen_id !== $current_screen->id ) {
+		if ( ! isset( $current_screen->id ) || $library_screen_id !== $current_screen->id || ! empty( $query->query_vars['meta_key'] ) ) {
 			return;
 		}
 
@@ -1225,12 +1225,17 @@ class Source_Local extends Source_Base {
 				<i class="eicon-folder"></i>
 				<h2>
 					<?php
-					/* translators: %s: Current Type Label */
+					/* translators: %s: Template type label. */
 					printf( __( 'Create Your First %s', 'elementor' ), $current_type_label );
 					?>
 				</h2>
-				<p><?php echo __( 'Add templates and reuse them across your website. Easily export and import them to any other project, for an optimised workflow.', 'elementor' ); ?></p>
-				<a id="elementor-template-library-add-new" class="elementor-button elementor-button-success" href="<?php esc_url( Utils::get_pro_link( 'https://elementor.com/pro/?utm_source=wp-custom-fonts&utm_campaign=gopro&utm_medium=wp-dash' ) ); ?>"><?php echo __( 'Add New', 'elementor' ); ?> <?php echo esc_html( $current_type_label ); ?></a>
+				<p><?php echo __( 'Add templates and reuse them across your website. Easily export and import them to any other project, for an optimized workflow.', 'elementor' ); ?></p>
+				<a id="elementor-template-library-add-new" class="elementor-button elementor-button-success" href="<?php esc_url( Utils::get_pro_link( 'https://elementor.com/pro/?utm_source=wp-custom-fonts&utm_campaign=gopro&utm_medium=wp-dash' ) ); ?>">
+					<?php
+					/* translators: %s: Template type label. */
+					printf( __( 'Add New %s', 'elementor' ), $current_type_label );
+					?>
+				</a>
 			</div>
 		</div>
 		<?php
@@ -1373,10 +1378,16 @@ class Source_Local extends Source_Base {
 	 * @return string Template label.
 	 */
 	private function get_template_label_by_type( $template_type ) {
-		$template_label = ucwords( str_replace( '_', ' ', $template_type ) );
+		$document_types = Plugin::instance()->documents->get_document_types();
+
+		if ( isset( $document_types[ $template_type ] ) ) {
+			$template_label = call_user_func( [ $document_types[ $template_type ], 'get_title' ] );
+		} else {
+			$template_label = ucwords( str_replace( [ '_', '-' ], ' ', $template_type ) );
+		}
 
 		if ( 'page' === $template_type ) {
-			$template_label = 'Content';
+			$template_label = __( 'Content', 'elementor' );
 		}
 
 		/**
@@ -1403,9 +1414,6 @@ class Source_Local extends Source_Base {
 	 * @access private
 	 */
 	private function add_actions() {
-		self::add_template_type( 'page' );
-		self::add_template_type( 'section' );
-
 		if ( is_admin() ) {
 			add_action( 'admin_menu', [ $this, 'register_admin_menu' ], 50 );
 			add_action( 'admin_enqueue_scripts', [ $this, 'admin_enqueue_scripts' ], 11 );
@@ -1416,8 +1424,8 @@ class Source_Local extends Source_Base {
 			add_filter( 'display_post_states', [ $this, 'remove_elementor_post_state_from_library' ], 11, 2 );
 
 			// Template type column.
-			add_action( 'manage_' . Source_Local::CPT . '_posts_columns', [ $this, 'admin_columns_headers' ] );
-			add_action( 'manage_' . Source_Local::CPT . '_posts_custom_column', [ $this, 'admin_columns_content' ] , 10, 2 );
+			add_action( 'manage_' . self::CPT . '_posts_columns', [ $this, 'admin_columns_headers' ] );
+			add_action( 'manage_' . self::CPT . '_posts_custom_column', [ $this, 'admin_columns_content' ] , 10, 2 );
 
 			// Template library bulk actions.
 			add_filter( 'bulk_actions-edit-elementor_library', [ $this, 'admin_add_bulk_export_action' ] );

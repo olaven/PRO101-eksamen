@@ -5,7 +5,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 3.83
+Stable tag: 3.85
 Requires PHP: 5.2
 
 Tired of broken Google Maps taking hours to setup? With Google Maps Widget you'll have a perfect map with a thumbnail & lightbox in minutes!
@@ -158,6 +158,10 @@ Read the <a href="http://wordpress.org/support/plugin/google-maps-widget">suppor
 7. Thumbnail map - light color scheme
 
 == Changelog ==
+
+= 3.85 =
+* 2018/05/03
+* added Bright thumbnail color scheme
 
 = 3.83 =
 * 2018/02/26
