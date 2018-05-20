@@ -1,31 +1,33 @@
 <style>
     .campus img, .campus article{
-        width: 100%; 
+        width: 100%;
     }
     .campus article h2{
-        font-size: 4em;
+        font-size: 2em;
     }
     /*desktop*/
     @media only screen and (min-width : 1224px) {
         .campus img{
             float: left; 
-            width: 60%; 
+            width: 60%;
         }
         .campus article{
             float: right; 
-            width: 40%; 
+            width: 40%;
         }
     }
     .campus-navigation{
         display: flex; 
-        width: 100%; 
+        width: 100%;
     }
     .campus-navigation > a{
         width: 100%; 
         border-style: solid;
+        border-color: white;
+        color: black;
     }
     .campus-info article:target{
-        visibility: visible; 
+        visibility: visible;
     }
     .campus-info article{
         position: absolute; 
@@ -33,7 +35,6 @@
         margin-top: 2vh; 
         margin-left: 1.5vw; 
     }
-    
 </style>
     
 <script>
@@ -46,7 +47,7 @@
                     if(button.href === identifier){
                         button.style.webkitTransform = "scaleY(1.4)"; 
                     } else {
-                        button.style.webkitTransform = "scaleY(1)"; 
+                        button.style.webkitTransform = "scaleY(1)";
                     }
                 }
             }

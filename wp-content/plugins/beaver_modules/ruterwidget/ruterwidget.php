@@ -37,11 +37,25 @@ FLBuilder::register_module( 'ruterwidget', array(
                     'navn' => array(
                         'type' => 'text', 
                         'label' => 'Navn (Display)'
-                    )
+                    ),
+                    'height'        => array(
+						'type'          => 'text',
+						'label'         => __( 'Height', 'fl-builder' ),
+						'default'       => '400',
+						'size'          => '5',
+						'description'   => 'px',
+					),
+                    'width'        => array(
+						'type'          => 'text',
+						'label'         => __( 'Width', 'fl-builder' ),
+						'default'       => '400',
+						'size'          => '5',
+						'description'   => 'px',
+					),
                 )
             )
         )
     )
-) );
+));
 
 ?>
