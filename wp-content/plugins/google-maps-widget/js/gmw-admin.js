@@ -419,7 +419,7 @@ jQuery(function($) {
         'dialogClass' : 'wp-dialog gmw-dialog',
         'modal' : true,
         'resizable': false,
-        'width': 850,
+        'width': 880,
         'title': gmw.plugin_name,
         'autoOpen': false,
         'closeOnEscape': false,

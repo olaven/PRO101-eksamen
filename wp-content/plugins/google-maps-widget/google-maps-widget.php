@@ -4,7 +4,7 @@ Plugin Name: Google Maps Widget
 Plugin URI: http://www.gmapswidget.com/
 Description: Display a single image super-fast loading Google map in a widget. A larger, full featured map is available in a lightbox. Includes a user-friendly interface and numerous appearance options.
 Author: Web Factory Ltd
-Version: 3.83
+Version: 3.85
 Author URI: http://www.webfactoryltd.com/
 Text Domain: google-maps-widget
 Domain Path: lang
@@ -535,7 +535,7 @@ class GMW {
 
     // upsell to old users
     if (!$notice && empty($options['dismiss_notice_olduser']) &&
-        ((current_time('timestamp') - $options['first_install']) > (DAY_IN_SECONDS * 70))) {
+        ((current_time('timestamp') - $options['first_install']) > (DAY_IN_SECONDS * 60))) {
       add_action('admin_notices', array('GMW', 'notice_olduser'));
       $notice = true;
     } // upsell to old users
@@ -845,7 +845,7 @@ class GMW {
       } else {
         $out .= '<div class="gmw-promo-button"><a href="http://www.gmapswidget.com/buy/?p=pro-agency&r=GMW+v' . GMW::$version . '" data-noprevent="1" target="_blank">BUY $79</a></div>';
       }
-      $out .= '<span class="instant-download">Instant download &amp; activation directly from WordPress admin.<br>Secure payment process.</span>';
+      $out .= '<span class="instant-download"><span class="dashicons dashicons-yes"></span> 100% No-Risk Money Back Guarantee<br><span class="dashicons dashicons-yes"></span> Secure payment<br><span class="dashicons dashicons-yes"></span> Instant activation</span>';
       $out .= '</td>';
       $out .= '<td>';
       if ($promo_active) {
@@ -855,10 +855,10 @@ class GMW {
       } else {
         $out .= '<div class="gmw-promo-button"><a href="http://www.gmapswidget.com/buy/?p=pro-unlimited2&r=GMW+v' . GMW::$version . '" data-noprevent="1" target="_blank">BUY $29</a></div>';
       }
-      $out .= '<span class="instant-download">Instant download &amp; activation directly from WordPress admin.<br>Secure payment process.</span>';
+      $out .= '<span class="instant-download"><span class="dashicons dashicons-yes"></span> 100% No-Risk Money Back Guarantee<br><span class="dashicons dashicons-yes"></span> Secure payment<br><span class="dashicons dashicons-yes"></span> Instant activation</span>';
       $out .= '</td>';
-      $out .= '<td><div class="gmw-promo-button"><a href="http://www.gmapswidget.com/buy/?p=yearly&r=GMW+v' . GMW::$version . '" data-noprevent="1" target="_blank">$15 <small>/year</small></a></div>';
-      $out .= '<span class="instant-download">Instant download &amp; activation directly from WordPress admin.<br>Secure payment process.</span>';
+      $out .= '<td><div class="gmw-promo-button"><a href="http://www.gmapswidget.com/buy/?p=yearly2&r=GMW+v' . GMW::$version . '" data-noprevent="1" target="_blank">$19 <small>/year</small></a></div>';
+      $out .= '<span class="instant-download"><span class="dashicons dashicons-yes"></span> 100% No-Risk Money Back Guarantee<br><span class="dashicons dashicons-yes"></span> Secure payment<br><span class="dashicons dashicons-yes"></span> Instant activation</span>';
       $out .= '</td>';
       $out .= '</tr>';
       $out .= '</table>';

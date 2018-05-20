@@ -1,5 +1,5 @@
-/*! elementor - v2.0.7 - 18-04-2018 */
-(function(){function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s}return e})()({1:[function(require,module,exports){
+/*! elementor - v2.0.12 - 15-05-2018 */
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 var ElementsHandler;
 
 ElementsHandler = function( $ ) {
@@ -1369,10 +1369,21 @@ module.exports = ViewModule.extend( {
 		}
 
 		var scrollTop = $anchor.offset().top,
-			$wpAdminBar = elementorFrontend.getElements( '$wpAdminBar' );
+			$wpAdminBar = elementorFrontend.getElements( '$wpAdminBar' ),
+			$activeStickys = jQuery( '.elementor-sticky--active' ),
+			maxStickyHeight = 0;
 
 		if ( $wpAdminBar.length > 0 ) {
-			scrollTop -= this.elements.$wpAdminBar.height();
+			scrollTop -= $wpAdminBar.height();
+		}
+
+		// Offset height of tallest sticky
+		if ( $activeStickys.length > 0 ) {
+			 maxStickyHeight = Math.max.apply( null, $activeStickys.map( function() {
+				return jQuery( this ).height();
+			} ).get() );
+
+			scrollTop -= maxStickyHeight;
 		}
 
 		event.preventDefault();
@@ -2234,17 +2245,15 @@ module.exports = ViewModule.extend( {
 
 		distanceFromTop += parseInt( this.elements.$container.css( 'margin-top' ), 10 );
 
-		this.elements.$container.height( '' );
-
 		this.elements.$items.each( function( index ) {
 			var row = Math.floor( index / columnsCount ),
-				indexAtRow = index % columnsCount,
 				$item = jQuery( this ),
-				itemPosition = $item.position(),
 				itemHeight = $item[0].getBoundingClientRect().height + settings.verticalSpaceBetween;
 
 			if ( row ) {
-				var pullHeight = itemPosition.top - distanceFromTop - heights[ indexAtRow ];
+				var itemPosition = $item.position(),
+                    indexAtRow = index % columnsCount,
+                    pullHeight = itemPosition.top - distanceFromTop - heights[ indexAtRow ];
 
 				pullHeight -= parseInt( $item.css( 'margin-top' ), 10 );
 
@@ -2252,13 +2261,11 @@ module.exports = ViewModule.extend( {
 
 				$item.css( 'margin-top', pullHeight + 'px' );
 
-				heights[ indexAtRow ] += itemHeight;
+                heights[ indexAtRow ] += itemHeight;
 			} else {
 				heights.push( itemHeight );
 			}
 		} );
-
-		this.elements.$container.height( Math.max.apply( Math, heights ) );
 	}
 } );
 

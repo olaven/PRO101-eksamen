@@ -934,7 +934,7 @@ ul.ui-tabs-nav{
 }
 
 #gmw-pricing-table tr td:first-child {
-  background-color: #0085ba;  
+  background-color: #0085ba;
 }
 #gmw-pricing-table tr td:nth-child(2) {
   background-color: #1fbc61;
@@ -1022,6 +1022,7 @@ ul.ui-tabs-nav{
   text-align: center;
   display: inline-block;
   font-style: italic;
+  margin: 0 -20px 10px -20px;
 }
 
 .gmw-promo-button a {
