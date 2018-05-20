@@ -69,7 +69,7 @@
                     callback(this.responseText);
                 }
             };
-            xhttp.open("GET", "https://tek.westerdals.no/~zahsaf17/wordpress_/wp-content/plugins/beaver_modules/bysykkel/includes/" + type + ".php", true);
+            xhttp.open("GET", "wp-content/plugins/beaver_modules/bysykkel/includes/" + type + ".php", true);
             xhttp.send();
         }
 
@@ -133,6 +133,7 @@
             controlUI.appendChild(controlText);
             // Setup the click event listeners: simply set the map to Chicago.
             controlUI.addEventListener('click', function() {
+                console.log("hei"); 
                 //document.getElementById('right-panel').style.display = "none";
                 //document.getElementById('mode').style.display = "none";
                 infowindow = new google.maps.InfoWindow();
@@ -209,10 +210,12 @@
                             lat: station.center.latitude,
                             lng: station.center.longitude
                         };
+
                         let marker = new google.maps.Marker({
                             map: map,
                             position: position,
-                            animation: google.maps.Animation.DROP
+                            animation: google.maps.Animation.DROP,
+                            icon: 'images/ikoner/bike.png'
                         });
 
                         markers.push(marker);
@@ -222,70 +225,6 @@
             });
 
         }
-        /*google.maps.event.addDomListener(document.getElementById('posisjon'), 'click', function(evt) {
-            removeMarkers(); 
-            markers = [];
-            document.getElementById('mode').style.display = "block";
-            document.getElementById('hide').style.display = "block";
-            document.getElementById('right-panel').style.display = "initial";
-            infoWindow = new google.maps.InfoWindow;
-            // Try HTML5 geolocation.
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    pos = {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    };
-                    infoWindow.setPosition(pos);
-                    map.setCenter(pos);
-                    directionsDisplay.setMap(map);
-                    directionsDisplay.setPanel(document.getElementById('right-panel'));
-                    directionsDisplay.getPanel().style.height = "5px";
-                    directionsService.route({
-                        origin: pos,
-                        destination: oslo,
-                        travelMode: google.maps.TravelMode["DRIVING"]
-                    }, function(response, status) {
-                        if (status === 'OK') {
-                            directionsDisplay.setDirections(response);
-                        } else {
-                            window.alert('Directions request failed due to ' + status);
-                        }
-                    });
-                    document.getElementById('mode').addEventListener('change', function() {
-                        var selectedMode = document.getElementById('mode').value;
-                        directionsService.route({
-                            origin: pos,
-                            destination: oslo,
-                            travelMode: google.maps.TravelMode[selectedMode]
-                        }, function(response, status) {
-                            if (status === 'OK') {
-                                directionsDisplay.setDirections(response);
-                            } else {
-                                window.alert('Directions request failed due to ' + status);
-                            }
-                        });
-                    })
-                })
-            }
-        });
-        google.maps.event.addDomListener(document.getElementById('hide'), 'click', function(evt) {
-            document.getElementById('right-panel').style.display = "none";
-            document.getElementById('mode').style.display = "none";
-            document.getElementById('hide').style.display = "none";
-            infowindow = new google.maps.InfoWindow();
-            var service = new google.maps.places.PlacesService(map);
-            directionsDisplay.setMap();
-            map.setZoom(14);
-            map.setCenter(oslo);
-        });*/
-
-        //addMapSearchListener('butikk', 'store'); 
-        //addMapSearchListener('trening', 'gym'); 
-
-        //google.maps.event.addDomListener(document.getElementById('bike'), 'click', function(evt) {
-
-        //});
 
         function createMarker(place) {
             var placeLoc = place.geometry.location;
@@ -314,25 +253,7 @@
             position: oslo,
             animation: google.maps.Animation.DROP,
         });
-        /*
-        Legger til listeners på knapper som skal aktivere søking på kartet
-        */
-        /*function addMapSearchListener(buttonId, searchTerm){
-            google.maps.event.addDomListener(document.getElementById(buttonId), 'click', function(evt) {
-                //document.getElementById('right-panel').style.display = "none";
-                //document.getElementById('mode').style.display = "none";
-                infowindow = new google.maps.InfoWindow();
-                var service = new google.maps.places.PlacesService(map);
-                directionsDisplay.setMap();
-                map.setZoom(14);
-                map.setCenter(oslo);
-                service.nearbySearch({
-                    location: oslo,
-                    radius: 500,
-                    type: [searchTerm]
-                }, callback)
-            });
-        }*/
+
         /*
             Fjerner markers på kartet
         */
