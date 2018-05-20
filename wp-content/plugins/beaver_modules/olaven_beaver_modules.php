@@ -13,6 +13,7 @@ function my_load_module_examples() {
         // Include your custom modules here.
         require_once 'bysykkel/bysykkel.php';
         require_once 'campus/campus.php';
+        require_once 'campuskort/campuskort.php';
         require_once 'ruterwidget/ruterwidget.php';
     }
 }
