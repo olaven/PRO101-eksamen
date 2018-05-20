@@ -2,6 +2,9 @@
     .campus img, .campus article{
         width: 100%; 
     }
+    .campus article h2{
+        font-size: 4em;
+    }
     /*desktop*/
     @media only screen and (min-width : 1224px) {
         .campus img{
@@ -27,6 +30,8 @@
     .campus-info article{
         position: absolute; 
         visibility: hidden;
+        margin-top: 2vh; 
+        margin-left: 1.5vw; 
     }
     
 </style>
@@ -39,7 +44,7 @@
                 let identifier = event.target.href; 
                 for(button of buttons){
                     if(button.href === identifier){
-                        button.style.webkitTransform = "scaleY(1.2)"; 
+                        button.style.webkitTransform = "scaleY(1.4)"; 
                     } else {
                         button.style.webkitTransform = "scaleY(1)"; 
                     }

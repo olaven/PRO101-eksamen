@@ -133,7 +133,6 @@
             controlUI.appendChild(controlText);
             // Setup the click event listeners: simply set the map to Chicago.
             controlUI.addEventListener('click', function() {
-                console.log("hei"); 
                 //document.getElementById('right-panel').style.display = "none";
                 //document.getElementById('mode').style.display = "none";
                 infowindow = new google.maps.InfoWindow();
