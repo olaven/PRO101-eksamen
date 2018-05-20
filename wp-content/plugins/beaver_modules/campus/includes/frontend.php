@@ -1,34 +1,35 @@
 <style>
     .campus img, .campus article{
-        width: 100%; 
+        width: 100%;
     }
     /*desktop*/
     @media only screen and (min-width : 1224px) {
         .campus img{
             float: left; 
-            width: 60%; 
+            width: 60%;
         }
         .campus article{
             float: right; 
-            width: 40%; 
+            width: 40%;
         }
     }
     .campus-navigation{
         display: flex; 
-        width: 100%; 
+        width: 100%;
     }
     .campus-navigation > a{
         width: 100%; 
         border-style: solid;
+        border-color: white;
+        color: black;
     }
     .campus-info article:target{
-        visibility: visible; 
+        visibility: visible;
     }
     .campus-info article{
         position: absolute; 
         visibility: hidden;
     }
-    
 </style>
     
 <script>
@@ -39,9 +40,9 @@
                 let identifier = event.target.href; 
                 for(button of buttons){
                     if(button.href === identifier){
-                        button.style.webkitTransform = "scaleY(1.2)"; 
+                        button.style.transform = "scaleY(1.4)";
                     } else {
-                        button.style.webkitTransform = "scaleY(1)"; 
+                        button.style.transform = "scaleY(1)";
                     }
                 }
             }

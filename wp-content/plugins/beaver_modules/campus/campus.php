@@ -46,7 +46,7 @@ FLBuilder::register_module( 'campus', array(
                         'type'       => 'time',
                         'label'      => __( 'Åpent til', 'fl-builder' ),
                         'default'		=>array(
-                            'hours'		=> '11',
+                            'hours'		=> '23',
                             'minutes'	=> '00',
                             'day_period'	=> 'pm'
                         )
@@ -64,7 +64,7 @@ FLBuilder::register_module( 'campus', array(
                         'type'       => 'time',
                         'label'      => __( 'Kantine, åpent til', 'fl-builder' ),
                         'default'		=>array(
-                            'hours'		=> '11',
+                            'hours'		=> '23',
                             'minutes'	=> '00',
                             'day_period'	=> 'pm'
                         )
