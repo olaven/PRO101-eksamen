@@ -10,7 +10,6 @@
         html {
             position: absolute;
             width: 100%;
-            overflow-y: hidden;
             top: 0;
             bottom: 0;
         }
@@ -143,7 +142,7 @@
                 service.nearbySearch({
                     location: oslo,
                     radius: 500,
-                    type: ['butikk']
+                    type: ['store']
                 }, callback)
             });
 
