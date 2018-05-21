@@ -1,4 +1,7 @@
 <style>
+    .campus{
+        text-align: center; 
+    }
     .campus img, .campus article{
         width: 100%;
     }
