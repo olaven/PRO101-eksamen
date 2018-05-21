@@ -26,6 +26,9 @@
         border-color: white;
         color: black;
     }
+    .campus-navigation > div:hover{
+        border-bottom: solid 1px; 
+    }
     .campus-info article{
         position: absolute; 
         display: none; 
@@ -41,6 +44,15 @@
 
         for(button of buttons){
             button.onclick = (event) => {
+                //strek under riktig knapp 
+                for(button of buttons){
+                    if(button == event.target){
+                        button.style.borderBottom = "solid 1px"; 
+                    } else {
+                        button.style.borderBottom = "none"; 
+                    }
+                }
+                //vis riktig 
                 let identifier = event.target.className.split(" ")[1].split("-button")[0];
                 let articles = document.getElementsByClassName("articles");
                 for(article of articles){
