@@ -1,6 +1,8 @@
 <style>
     .campus{
         text-align: center; 
+        margin-top: 20vh; 
+        margin-bottom: 20vh; 
     }
     .campus img, .campus article{
         width: 100%;
