@@ -39,7 +39,6 @@
             position: relative;
             z-index: 99;
         }
-
     </style>
 
 
@@ -68,19 +67,22 @@
                     callback(this.responseText);
                 }
             };
-            xhttp.open("GET", "wp-content/plugins/beaver_modules/bysykkel/includes/" + type + ".php", true);
+            //Bruk denne hvis du skal teste på localhost
+            //xhttp.open("GET", "wp-content/plugins/beaver_modules/bysykkel/includes/" + type + ".php", true);
+            //Ellers så bruk denne hvis du skal teste på webserver
+            xhttp.open("GET", "https://tek.westerdals.no/~zahsaf17/wordpress_/wp-content/plugins/beaver_modules/bysykkel/includes/" + type + ".php", true);
             xhttp.send();
         }
-
     </script>
 
 </head>
 <script>
     var map;
     var oslo = {
-        lat: 59.915997,
-        lng: 10.760110
+        lat: parseFloat("<?php echo $settings->latitude; ?>"),
+        lng: parseFloat("<?php echo $settings->longitude; ?>")
     };
+    console.log(oslo);
 
 
 
@@ -213,7 +215,7 @@
                             map: map,
                             position: position,
                             animation: google.maps.Animation.DROP,
-                            icon: 'images/ikoner/bike.png'
+                            icon: 'https://tek.westerdals.no/~zahsaf17/wordpress_/wp-content/plugins/beaver_modules/bysykkel/ikoner/bike.png'
                         });
 
                         markers.push(marker);
@@ -270,8 +272,6 @@
                 marker.setMap(map);
             }
         }
-
-
     }
 
 
@@ -282,7 +282,6 @@
             'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
     }
-
 </script>
 
 <body>
