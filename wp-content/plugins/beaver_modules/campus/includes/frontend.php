@@ -4,22 +4,8 @@
         margin-top: 20vh; 
         margin-bottom: 20vh; 
     }
-    .campus img, .campus article{
-        width: 100%;
-    }
     .campus article h2{
         font-size: 2em;
-    }
-    /*desktop*/
-    @media only screen and (min-width : 1224px) {
-        .campus img{
-            float: left; 
-            width: 60%;
-        }
-        .campus article{
-            float: right; 
-            width: 40%;
-        }
     }
     .campus-navigation{
         display: flex; 
@@ -35,9 +21,8 @@
         border-bottom: solid 1px; 
     }
     .campus-info article{
-        position: absolute; 
         display: none; 
-        margin-top: 2vh; 
+        margin-top: 5vh; 
         margin-left: 1.5vw; 
     }
 </style>
@@ -72,7 +57,6 @@
     }
 </script>
 <div class="campus">
-    <img src="<?php echo $settings->bilde_src; ?>" />
     <article>
         <h2>
             <?php echo $settings->navn; ?>
@@ -85,6 +69,7 @@
         <section class="campus-info">
             <article id="campus-contact" class="articles">
                 <?php
+                    echo "<hr>"; 
                     echo $settings->kontakt_telefon;
                     echo "<br/>"; 
                     echo $settings->kontakt_epost;  
