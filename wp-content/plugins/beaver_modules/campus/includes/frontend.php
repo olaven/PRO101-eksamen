@@ -20,18 +20,15 @@
         display: flex; 
         width: 100%;
     }
-    .campus-navigation > a{
+    .campus-navigation > div{
         width: 100%; 
         border-style: solid;
         border-color: white;
         color: black;
     }
-    .campus-info article:target{
-        visibility: visible;
-    }
     .campus-info article{
         position: absolute; 
-        visibility: hidden;
+        display: none; 
         margin-top: 2vh; 
         margin-left: 1.5vw; 
     }
@@ -40,14 +37,17 @@
 <script>
     window.onload = () => {
         let buttons = document.getElementsByClassName("campus-menu-button"); 
+        
+
         for(button of buttons){
             button.onclick = (event) => {
-                let identifier = event.target.href; 
-                for(button of buttons){
-                    if(button.href === identifier){
-                        button.style.webkitTransform = "scaleY(1.4)"; 
+                let identifier = event.target.className.split(" ")[1].split("-button")[0];
+                let articles = document.getElementsByClassName("articles");
+                for(article of articles){
+                    if(article.id === identifier){
+                        article.style.display = "block"; 
                     } else {
-                        button.style.webkitTransform = "scaleY(1)";
+                        article.style.display = "none"; 
                     }
                 }
             }
@@ -61,12 +61,12 @@
             <?php echo $settings->navn; ?>
         </h2>
         <nav class="campus-navigation">
-            <a href="#campus-contact" class="campus-menu-button">Kontakt</a>
-            <a href="#campus-times" class="campus-menu-button">Åpningstider</a>
-            <a href="#campus-cantine" class="campus-menu-button">Kantine</a>
+            <div class="campus-menu-button campus-contact-button">Kontakt</div>
+            <div class="campus-menu-button campus-times-button">Åpningstider</div>
+            <div class="campus-menu-button campus-cantine-button">Kantine</div>
         </nav>
         <section class="campus-info">
-            <article id="campus-contact">
+            <article id="campus-contact" class="articles">
                 <?php
                     echo $settings->kontakt_telefon;
                     echo "<br/>"; 
@@ -74,7 +74,7 @@
                 ?> 
                 <h4>Du er alltid velkommen</h4>
             </article>
-            <article id="campus-times">
+            <article id="campus-times" class="articles">
                 <?php 
                     date_default_timezone_set("Europe/Oslo"); 
                     $current_hour = date("G");
@@ -94,7 +94,7 @@
                     echo $settings->apent_til["hours"] . ":" . $settings->apent_til["minutes"]
                 ?> 
             </article>
-            <article id="campus-cantine">
+            <article id="campus-cantine" class="articles">
                 <h4>Info</h4>
                 <?php 
                     echo $settings->info_kantine; 
