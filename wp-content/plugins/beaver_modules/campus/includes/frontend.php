@@ -65,6 +65,7 @@
             <div class="campus-menu-button campus-contact-button">Kontakt</div>
             <div class="campus-menu-button campus-times-button">Åpningstider</div>
             <div class="campus-menu-button campus-cantine-button">Kantine</div>
+            <div class="campus-menu-button campus-tips-button">Tips</div>
         </nav>
         <section class="campus-info">
             <article id="campus-contact" class="articles">
@@ -108,6 +109,9 @@
                     echo " - "; 
                     echo $settings->apent_til_kantine["hours"] . ":" . $settings->apent_til_kantine["minutes"]
                 ?> 
+            </article>
+            <article id="campus-tips" class="articles">
+                <h2>TIPS FRA OSS!</h2>
             </article>
         </section>
     </article>
