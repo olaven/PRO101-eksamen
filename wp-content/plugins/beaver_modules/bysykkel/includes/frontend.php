@@ -47,15 +47,15 @@
 
     <script>
         /*
-                                        type -> hva du vil hente
-                                        callback -> funksjonen som skal kjøres (respons blir sendt som parameter)
+            type -> hva du vil hente
+            callback -> funksjonen som skal kjøres (respons blir sendt som parameter)
 
-                                        ex. 
-                                        getBysykkelJS("station", (response) => {
-                                            //gjør det du vil med response her 
-                                            console.log(response); 
-                                        })
-                                    */
+            ex. 
+            getBysykkelJS("station", (response) => {
+                //gjør det du vil med response her 
+                console.log(response); 
+            })
+        */
         let getBysykkelJS = (type, callback) => {
             //sjekk om parameter er valid 
             if (['stations', 'availability'].indexOf(type) === -1) {
