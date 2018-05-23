@@ -28,6 +28,9 @@ Eksamensprosjektet skal startes på i løpet av mai.
 * [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
 * [Grafisk profil Høyskolen Kristiania](http://designmanual.kristiania.no/)
 
-
+### Linker til Google Docs
+* [Refleksjonsnotat](https://docs.google.com/document/d/1u0wtHEnJZBXc48v-dR277CzpitJiW6A8kUBxA-GjQng/edit?usp=sharing)
+* [Prosjektrapport - denne kommer soon]()
+* [Eyetracking Oppgaver] (https://docs.google.com/document/d/1tPIoaA2SvJudbrG7wErKSY7fWmjsRmOxhl7-lIQD8tU/edit)
 
 bla bla bla
