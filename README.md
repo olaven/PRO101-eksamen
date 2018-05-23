@@ -32,6 +32,7 @@ Eksamensprosjektet skal startes på i løpet av mai.
 ### Linker til Google Docs
 * [Refleksjonsnotat](https://docs.google.com/document/d/1u0wtHEnJZBXc48v-dR277CzpitJiW6A8kUBxA-GjQng/edit?usp=sharing)
 * [Prosjektrapport](https://docs.google.com/document/d/1NL02W9n7cEB-6m_qgaMzo_iEeZ2fwgKrPY1rx_9L7xw/edit?usp=sharing)
+* [Prosjektrapport V2](https://docs.google.com/document/d/1bPSxvhhEF6BdxK-DtokFBlmW4o8TCz9hBrR0PLxWLL0/edit?usp=sharing)
 * [Eyetracking Oppgaver](https://docs.google.com/document/d/1tPIoaA2SvJudbrG7wErKSY7fWmjsRmOxhl7-lIQD8tU/edit)
 
 bla bla bla
