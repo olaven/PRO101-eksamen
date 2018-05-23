@@ -23,14 +23,15 @@ Eksamensprosjektet skal startes på i løpet av mai.
 * [Discord](https://discord.gg/FgPVHz)
 * Facebook chat
 
-### Annet nyttig
+### Ressurser
 
 * [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
 * [Grafisk profil Høyskolen Kristiania](http://designmanual.kristiania.no/)
+* [Altinn - retningslinjer for design](https://altinn.github.io/designsystem-styleguide/)
 
 ### Linker til Google Docs
 * [Refleksjonsnotat](https://docs.google.com/document/d/1u0wtHEnJZBXc48v-dR277CzpitJiW6A8kUBxA-GjQng/edit?usp=sharing)
-* [Prosjektrapport - denne kommer soon]()
-* [Eyetracking Oppgaver] (https://docs.google.com/document/d/1tPIoaA2SvJudbrG7wErKSY7fWmjsRmOxhl7-lIQD8tU/edit)
+* [Prosjektrapport](https://docs.google.com/document/d/1NL02W9n7cEB-6m_qgaMzo_iEeZ2fwgKrPY1rx_9L7xw/edit?usp=sharing)
+* [Eyetracking Oppgaver](https://docs.google.com/document/d/1tPIoaA2SvJudbrG7wErKSY7fWmjsRmOxhl7-lIQD8tU/edit)
 
 bla bla bla
