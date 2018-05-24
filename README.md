@@ -34,5 +34,6 @@ Eksamensprosjektet skal startes på i løpet av mai.
 * [Prosjektrapport](https://docs.google.com/document/d/1NL02W9n7cEB-6m_qgaMzo_iEeZ2fwgKrPY1rx_9L7xw/edit?usp=sharing)
 * [Prosjektrapport V2](https://docs.google.com/document/d/1bPSxvhhEF6BdxK-DtokFBlmW4o8TCz9hBrR0PLxWLL0/edit?usp=sharing)
 * [Eyetracking Oppgaver](https://docs.google.com/document/d/1tPIoaA2SvJudbrG7wErKSY7fWmjsRmOxhl7-lIQD8tU/edit)
+* [Prosjektrapport - omskrevet](https://docs.google.com/document/d/1z6eCzYGgr2qbtRJiws6HhfmuIO1GvKqTiPZavOYtaMs/edit?usp=sharing)
 
 bla bla bla
