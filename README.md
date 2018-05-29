@@ -28,7 +28,7 @@ Eksamensprosjektet skal startes på i løpet av mai.
 * [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
 * [Grafisk profil Høyskolen Kristiania](http://designmanual.kristiania.no/)
 * [Altinn - retningslinjer for design](https://altinn.github.io/designsystem-styleguide/)
-* [Chicago 16b - rettningslinjer for referanser i rapport] (http://biblioteket.kristiania.no/wp-content/uploads/2016/03/Guide-til-Chicagostilen_v2016.pdf)
+* [Chicago 16b - rettningslinjer for referanser i rapport](http://biblioteket.kristiania.no/wp-content/uploads/2016/03/Guide-til-Chicagostilen_v2016.pdf)
 
 ### Linker til Google Docs
 * [Refleksjonsnotat](https://docs.google.com/document/d/1u0wtHEnJZBXc48v-dR277CzpitJiW6A8kUBxA-GjQng/edit?usp=sharing)
