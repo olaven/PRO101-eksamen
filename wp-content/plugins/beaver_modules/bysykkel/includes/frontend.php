@@ -82,7 +82,6 @@
         lat: parseFloat("<?php echo $settings->latitude; ?>"),
         lng: parseFloat("<?php echo $settings->longitude; ?>")
     };
-    console.log(oslo);
 
 
 

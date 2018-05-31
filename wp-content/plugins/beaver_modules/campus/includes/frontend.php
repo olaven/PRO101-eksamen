@@ -103,7 +103,7 @@
                     echo $settings->info_kantine; 
                 ?> 
                 <h4>Åpningstider</h4>
-                <?php 
+                <?php
                     echo "</br>"; 
                     echo $settings->apent_fra_kantine["hours"] . ":" . $settings->apent_fra_kanine["minutes"]; 
                     echo " - "; 
